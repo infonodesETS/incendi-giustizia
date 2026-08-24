@@ -1,116 +1,116 @@
-provincia,incendi,ettari_totali_bruciati,ettari_bosco_macchia
-Palermo,402,67677,23037
-Agrigento,675,64946,10551
-Reggio di Calabria,720,41396,21497
-Caltanissetta,336,30035,5865
-Cosenza,923,26942,12364
-Enna,169,20715,9621
-Trapani,109,20280,7962
-Messina,552,20233,8395
-Catania,340,17274,6647
-Siracusa,201,13327,2811
-Bonarcado,1,13278,4836
-Latina,361,12454,3149
-Foggia,142,10312,2122
-Crotone,220,9748,3036
-Caserta,209,9695,3862
-Catanzaro,216,9169,5482
-Frosinone,186,7091,2162
-Matera,115,6814,2102
-Salerno,287,5874,3151
-Sud Sardegna,60,4948,1724
-Ragusa,56,4683,2512
-Potenza,96,4518,1409
-Barletta-Andria-Trani,45,4337,282
-Vibo Valentia,248,4157,1878
-Nuoro,45,3803,1375
-Bari,34,3485,641
-Roma,57,2887,1143
-Benevento,88,2829,802
-Taranto,52,2366,1079
-Napoli,46,2189,838
-Sassari,25,2161,1065
-Avellino,97,2128,809
-Chieti,19,2073,458
-Birori,1,1447,269
-L’Aquila,14,1379,488
-Grosseto,17,1236,219
+provincia,incendi,ettari_totali_bruciati,ettari_bosco
+Palermo,402,67677,7204
+Agrigento,675,64946,4030
+Reggio di Calabria,720,41396,11095
+Caltanissetta,336,30035,3820
+Cosenza,923,26942,7336
+Enna,169,20715,6643
+Trapani,109,20280,1875
+Messina,552,20233,3364
+Catania,340,17274,2159
+Siracusa,201,13327,1023
+Bonarcado,1,13278,2702
+Latina,361,12454,647
+Foggia,142,10312,1354
+Crotone,220,9748,1312
+Caserta,209,9695,1446
+Catanzaro,216,9169,3860
+Frosinone,186,7091,984
+Matera,115,6814,891
+Salerno,287,5874,1775
+Sud Sardegna,60,4948,287
+Ragusa,56,4683,1484
+Potenza,96,4518,671
+Barletta-Andria-Trani,45,4337,209
+Vibo Valentia,248,4157,1035
+Nuoro,45,3803,345
+Bari,34,3485,508
+Roma,57,2887,340
+Benevento,88,2829,582
+Taranto,52,2366,227
+Napoli,46,2189,332
+Sassari,25,2161,217
+Avellino,97,2128,434
+Chieti,19,2073,187
+Birori,1,1447,29
+L’Aquila,14,1379,371
+Grosseto,17,1236,154
 Lucca,17,1123,828
-Imperia,21,1117,634
+Imperia,21,1117,266
 Lecce,20,1049,140
-Sindia,4,951,80
-Gorizia,3,931,880
-Savona,11,790,635
-Perugia,18,739,451
-Oristano,9,722,223
-Viterbo,23,600,273
-Villaurbana,1,565,243
-Isernia,20,547,341
-Udine,9,532,437
-Pescara,6,516,150
-Cuneo,13,485,448
-Rieti,13,479,325
-Terni,11,455,226
-Mandas,2,452,171
-Bonorva,1,425,223
-Usellus,1,422,74
-Monastir,1,388,182
+Sindia,4,951,4
+Gorizia,3,931,694
+Savona,11,790,437
+Perugia,18,739,261
+Oristano,9,722,102
+Viterbo,23,600,158
+Villaurbana,1,565,132
+Isernia,20,547,48
+Udine,9,532,418
+Pescara,6,516,23
+Cuneo,13,485,447
+Rieti,13,479,239
+Terni,11,455,52
+Mandas,2,452,16
+Bonorva,1,425,197
+Usellus,1,422,23
+Monastir,1,388,31
 Nuraminis,3,354,48
-Massa-Carrara,8,313,62
+Massa-Carrara,8,313,24
 Ittiri,1,280,0
-Bologna,3,278,149
-Genova,12,267,89
-Cagliari,7,247,196
-La Spezia,14,245,172
-San Basilio,3,244,131
-Siena,6,214,17
-Campobasso,8,203,130
-Suni,3,196,53
-Teramo,5,195,88
-Villagrande Strisaili,3,189,75
-Parma,2,139,133
-Nurri,2,136,93
-Segariu,1,127,92
-Oniferi,1,126,16
+Bologna,3,278,12
+Genova,12,267,78
+Cagliari,7,247,65
+La Spezia,14,245,137
+San Basilio,3,244,1
+Siena,6,214,11
+Campobasso,8,203,7
+Suni,3,196,0
+Teramo,5,195,45
+Villagrande Strisaili,3,189,0
+Parma,2,139,126
+Nurri,2,136,5
+Segariu,1,127,37
+Oniferi,1,126,0
 Pisa,5,123,102
 Serramanna,1,119,18
 Villamar,1,111,0
-Fonni,5,95,18
-Livorno,4,93,93
-Zerfaliu,1,90,11
-Bono,1,89,68
+Fonni,5,95,8
+Livorno,4,93,6
+Zerfaliu,1,90,0
+Bono,1,89,5
 Pistoia,5,81,72
-Serdiana,2,74,31
-Bottidda,4,60,60
+Serdiana,2,74,0
+Bottidda,4,60,12
 Torino,3,60,18
 Pordenone,6,57,40
-Ascoli Piceno,4,57,43
-Tempio Pausania,1,56,23
+Ascoli Piceno,4,57,7
+Tempio Pausania,1,56,0
 Brindisi,4,52,8
-Firenze,3,48,45
-Arzana,3,37,32
-Arezzo,3,33,33
+Firenze,3,48,19
+Arzana,3,37,31
+Arezzo,3,33,25
 Calangianus,1,28,21
-Ittireddu,1,26,15
-Macerata,1,24,9
-San Teodoro,1,22,21
+Ittireddu,1,26,0
+Macerata,1,24,0
+San Teodoro,1,22,0
 Cabras,1,21,0
-Orroli,1,19,18
+Orroli,1,19,0
 Uta,1,18,18
 Forlì-Cesena,1,18,9
 Prato,3,16,11
 San Vito,1,15,15
-Reggio nell’Emilia,1,13,12
+Reggio nell’Emilia,1,13,0
 Desulo,1,11,0
-Teti,1,9,4
-Perdasdefogu,1,9,9
-Santa Giusta,2,9,4
-Ancona,1,6,6
+Teti,1,9,0
+Perdasdefogu,1,9,0
+Santa Giusta,2,9,0
+Ancona,1,6,0
 Tortolì,1,6,0
-Bortigali,1,6,2
-Burgos,2,5,5
-Jerzu,1,4,4
-Piacenza,1,4,4
+Bortigali,1,6,0
+Burgos,2,5,1
+Jerzu,1,4,0
+Piacenza,1,4,0
 Alessandria,1,4,4
 Seui,1,1,1
 Aritzo,1,1,0

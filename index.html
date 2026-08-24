@@ -53,7 +53,11 @@ h1{font-family:"Newsreader",Georgia,serif;font-weight:500;font-size:clamp(30px,5
 .reg-bar{height:3px;background:var(--line-2);border-radius:2px;margin-top:10px;overflow:hidden}
 .reg-bar span{display:block;height:100%;background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 45%,transparent),var(--accent))}
 .tbl-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:12px;background:var(--surface)}
-table{border-collapse:collapse;width:100%;min-width:840px}
+table{border-collapse:collapse;width:100%;min-width:960px}
+.src{font-family:"IBM Plex Mono",monospace;font-size:9px;font-weight:600;letter-spacing:.04em;text-decoration:none;
+  color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);border-radius:4px;padding:0 4px;white-space:nowrap}
+.src:hover{background:color-mix(in srgb,var(--accent) 12%,transparent)}
+.reg-bosco{color:var(--muted)}.reg-bosco b{color:var(--ink)}
 thead th{text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--faint);font-weight:600;
   padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:bottom;background:var(--surface);position:sticky;top:0}
 .th-sub{font-family:"IBM Plex Mono",monospace;font-size:9.5px;letter-spacing:.02em;text-transform:none;color:var(--faint);font-weight:400}
@@ -110,7 +114,8 @@ footer b{color:var(--muted)}
         <span><b>20</b> uffici</span>
         <span><b>17</b> risposte</span>
         <span><b>14</b> con dati</span>
-        <span class="reg-fire"><b>2840</b> incendi · <b>259.170</b> ha</span>
+        <span class="reg-fire"><b>2840</b> incendi · <b>259.170</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>31.602</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>32.568</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:100%"></span></div>
     </header>
@@ -118,7 +123,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -127,6 +133,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>40 sentenze: 22 condanne, 16 assoluzioni, 2 patteg. · 8 archiviazioni</td>
     <td class="num">675</td>
     <td class="num c-ha"><span class="heat" style="--h:0.996"></span>64.946</td>
+    <td class="num">4030</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Sciacca</span><span class="uff-tipo">Tribunale · prov. Agrigento</span></td>
@@ -134,6 +141,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">675</td>
     <td class="num c-ha"><span class="heat" style="--h:0.996"></span>64.946</td>
+    <td class="num">4030</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Messina</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -141,6 +149,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">552</td>
     <td class="num c-ha"><span class="heat" style="--h:0.891"></span>20.233</td>
+    <td class="num">3364</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Barcellona Pozzo di Gotto</span><span class="uff-tipo">Tribunale · prov. Messina</span></td>
@@ -148,6 +157,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">552</td>
     <td class="num c-ha"><span class="heat" style="--h:0.891"></span>20.233</td>
+    <td class="num">3364</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Messina</span><span class="uff-tipo">Tribunale</span></td>
@@ -155,6 +165,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">552</td>
     <td class="num c-ha"><span class="heat" style="--h:0.891"></span>20.233</td>
+    <td class="num">3364</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Patti</span><span class="uff-tipo">Tribunale · prov. Messina</span></td>
@@ -162,6 +173,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">552</td>
     <td class="num c-ha"><span class="heat" style="--h:0.891"></span>20.233</td>
+    <td class="num">3364</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Palermo</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -169,6 +181,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>58 sentenze: 52 condanne, 4 assoluzioni, 2 prescr.</td>
     <td class="num">402</td>
     <td class="num c-ha"><span class="heat" style="--h:1.000"></span>67.677</td>
+    <td class="num">7204</td>
     <td class="c-nota">Ha accolto valutando l'esiguo numero di casi (58): prova che i dinieghi "per rielaborazione" sono scelte.</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Palermo</span><span class="uff-tipo">Tribunale</span></td>
@@ -176,6 +189,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>104 sentenze: 39 condanne, 48 assoluzioni, 8 prescr., 9 patteg. · 41 archiviazioni</td>
     <td class="num">402</td>
     <td class="num c-ha"><span class="heat" style="--h:1.000"></span>67.677</td>
+    <td class="num">7204</td>
     <td class="c-nota">Prima aveva chiesto un recapito telefonico; poi ha fornito i dati (145 procedimenti).</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Termini Imerese</span><span class="uff-tipo">Tribunale · prov. Palermo</span></td>
@@ -183,6 +197,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">402</td>
     <td class="num c-ha"><span class="heat" style="--h:1.000"></span>67.677</td>
+    <td class="num">7204</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Catania</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -190,6 +205,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">340</td>
     <td class="num c-ha"><span class="heat" style="--h:0.877"></span>17.274</td>
+    <td class="num">2159</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Caltagirone</span><span class="uff-tipo">Tribunale · prov. Catania</span></td>
@@ -197,6 +213,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">340</td>
     <td class="num c-ha"><span class="heat" style="--h:0.877"></span>17.274</td>
+    <td class="num">2159</td>
     <td class="c-nota">Silente in una provincia ad alto numero di incendi (340).</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Catania</span><span class="uff-tipo">Tribunale</span></td>
@@ -204,6 +221,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">340</td>
     <td class="num c-ha"><span class="heat" style="--h:0.877"></span>17.274</td>
+    <td class="num">2159</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Caltanissetta</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -211,6 +229,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>21 sentenze: 17 condanne, 1 assoluzioni, 1 prescr., 2 altro</td>
     <td class="num">336</td>
     <td class="num c-ha"><span class="heat" style="--h:0.927"></span>30.035</td>
+    <td class="num">3820</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Caltanissetta</span><span class="uff-tipo">Tribunale</span></td>
@@ -218,6 +237,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">336</td>
     <td class="num c-ha"><span class="heat" style="--h:0.927"></span>30.035</td>
+    <td class="num">3820</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Gela</span><span class="uff-tipo">Tribunale · prov. Caltanissetta</span></td>
@@ -225,6 +245,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">336</td>
     <td class="num c-ha"><span class="heat" style="--h:0.927"></span>30.035</td>
+    <td class="num">3820</td>
     <td class="c-nota">Silente in una provincia ad alto numero di incendi (336).</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Siracusa</span><span class="uff-tipo">Tribunale</span></td>
@@ -232,6 +253,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">201</td>
     <td class="num c-ha"><span class="heat" style="--h:0.854"></span>13.327</td>
+    <td class="num">1023</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Enna</span><span class="uff-tipo">Tribunale</span></td>
@@ -239,6 +261,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">169</td>
     <td class="num c-ha"><span class="heat" style="--h:0.894"></span>20.715</td>
+    <td class="num">6643</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Marsala</span><span class="uff-tipo">Tribunale · prov. Trapani</span></td>
@@ -246,6 +269,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">109</td>
     <td class="num c-ha"><span class="heat" style="--h:0.892"></span>20.280</td>
+    <td class="num">1875</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Trapani</span><span class="uff-tipo">Tribunale</span></td>
@@ -253,6 +277,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">109</td>
     <td class="num c-ha"><span class="heat" style="--h:0.892"></span>20.280</td>
+    <td class="num">1875</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Ragusa</span><span class="uff-tipo">Tribunale</span></td>
@@ -260,6 +285,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">56</td>
     <td class="num c-ha"><span class="heat" style="--h:0.760"></span>4683</td>
+    <td class="num">1484</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -271,7 +297,8 @@ footer b{color:var(--muted)}
         <span><b>12</b> uffici</span>
         <span><b>10</b> risposte</span>
         <span><b>5</b> con dati</span>
-        <span class="reg-fire"><b>2327</b> incendi · <b>91.412</b> ha</span>
+        <span class="reg-fire"><b>2327</b> incendi · <b>91.412</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>24.638</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>24.572</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:100%"></span></div>
     </header>
@@ -279,7 +306,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -288,6 +316,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">923</td>
     <td class="num c-ha"><span class="heat" style="--h:0.917"></span>26.942</td>
+    <td class="num">7336</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Cosenza</span><span class="uff-tipo">Tribunale</span></td>
@@ -295,6 +324,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">923</td>
     <td class="num c-ha"><span class="heat" style="--h:0.917"></span>26.942</td>
+    <td class="num">7336</td>
     <td class="c-nota">Silente in una provincia ad alto numero di incendi (923).</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Paola</span><span class="uff-tipo">Tribunale · prov. Cosenza</span></td>
@@ -302,6 +332,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">923</td>
     <td class="num c-ha"><span class="heat" style="--h:0.917"></span>26.942</td>
+    <td class="num">7336</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Reggio Calabria</span><span class="uff-tipo">Corte d'Appello · prov. Reggio di Calabria</span></td>
@@ -309,6 +340,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">720</td>
     <td class="num c-ha"><span class="heat" style="--h:0.956"></span>41.396</td>
+    <td class="num">11.095</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Locri</span><span class="uff-tipo">Tribunale · prov. Reggio di Calabria</span></td>
@@ -316,6 +348,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>13 sentenze: 5 condanne, 8 assoluzioni</td>
     <td class="num">720</td>
     <td class="num c-ha"><span class="heat" style="--h:0.956"></span>41.396</td>
+    <td class="num">11.095</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Palmi</span><span class="uff-tipo">Tribunale · prov. Reggio di Calabria</span></td>
@@ -323,6 +356,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">720</td>
     <td class="num c-ha"><span class="heat" style="--h:0.956"></span>41.396</td>
+    <td class="num">11.095</td>
     <td class="c-nota">Silente in una provincia ad alto numero di incendi (720).</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Reggio Calabria</span><span class="uff-tipo">Tribunale · prov. Reggio di Calabria</span></td>
@@ -330,6 +364,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">720</td>
     <td class="num c-ha"><span class="heat" style="--h:0.956"></span>41.396</td>
+    <td class="num">11.095</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Vibo Valentia</span><span class="uff-tipo">Tribunale</span></td>
@@ -337,6 +372,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">248</td>
     <td class="num c-ha"><span class="heat" style="--h:0.749"></span>4157</td>
+    <td class="num">1035</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Crotone</span><span class="uff-tipo">Tribunale</span></td>
@@ -344,6 +380,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">220</td>
     <td class="num c-ha"><span class="heat" style="--h:0.826"></span>9748</td>
+    <td class="num">1312</td>
     <td class="c-nota">Ha insistito per un contatto telefonico/di persona anche dopo il chiarimento scritto.</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Catanzaro</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -351,6 +388,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">216</td>
     <td class="num c-ha"><span class="heat" style="--h:0.820"></span>9169</td>
+    <td class="num">3860</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Catanzaro</span><span class="uff-tipo">Tribunale</span></td>
@@ -358,6 +396,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">216</td>
     <td class="num c-ha"><span class="heat" style="--h:0.820"></span>9169</td>
+    <td class="num">3860</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Lamezia Terme</span><span class="uff-tipo">Tribunale · prov. Catanzaro</span></td>
@@ -365,6 +404,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>9 sentenze: 3 assoluzioni, 6 patteg. · 23 archiviazioni</td>
     <td class="num">216</td>
     <td class="num c-ha"><span class="heat" style="--h:0.820"></span>9169</td>
+    <td class="num">3860</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -376,7 +416,8 @@ footer b{color:var(--muted)}
         <span><b>10</b> uffici</span>
         <span><b>7</b> risposte</span>
         <span><b>4</b> con dati</span>
-        <span class="reg-fire"><b>640</b> incendi · <b>23.511</b> ha</span>
+        <span class="reg-fire"><b>640</b> incendi · <b>23.511</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>2368</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>4433</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:90%"></span></div>
     </header>
@@ -384,7 +425,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -393,6 +435,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">361</td>
     <td class="num c-ha"><span class="heat" style="--h:0.848"></span>12.454</td>
+    <td class="num">647</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Cassino</span><span class="uff-tipo">Tribunale · prov. Frosinone</span></td>
@@ -400,6 +443,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">186</td>
     <td class="num c-ha"><span class="heat" style="--h:0.797"></span>7091</td>
+    <td class="num">984</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Frosinone</span><span class="uff-tipo">Tribunale</span></td>
@@ -407,6 +451,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">186</td>
     <td class="num c-ha"><span class="heat" style="--h:0.797"></span>7091</td>
+    <td class="num">984</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Roma</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -414,6 +459,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">57</td>
     <td class="num c-ha"><span class="heat" style="--h:0.716"></span>2887</td>
+    <td class="num">340</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Civitavecchia</span><span class="uff-tipo">Tribunale · prov. Roma</span></td>
@@ -421,6 +467,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">57</td>
     <td class="num c-ha"><span class="heat" style="--h:0.716"></span>2887</td>
+    <td class="num">340</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Roma</span><span class="uff-tipo">Tribunale</span></td>
@@ -428,6 +475,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">57</td>
     <td class="num c-ha"><span class="heat" style="--h:0.716"></span>2887</td>
+    <td class="num">340</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Tivoli</span><span class="uff-tipo">Tribunale · prov. Roma</span></td>
@@ -435,6 +483,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">57</td>
     <td class="num c-ha"><span class="heat" style="--h:0.716"></span>2887</td>
+    <td class="num">340</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Velletri</span><span class="uff-tipo">Tribunale · prov. Roma</span></td>
@@ -442,6 +491,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">57</td>
     <td class="num c-ha"><span class="heat" style="--h:0.716"></span>2887</td>
+    <td class="num">340</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Viterbo</span><span class="uff-tipo">Tribunale</span></td>
@@ -449,6 +499,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">23</td>
     <td class="num c-ha"><span class="heat" style="--h:0.575"></span>600</td>
+    <td class="num">158</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Rieti</span><span class="uff-tipo">Tribunale</span></td>
@@ -456,6 +507,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">13</td>
     <td class="num c-ha"><span class="heat" style="--h:0.555"></span>479</td>
+    <td class="num">239</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -467,7 +519,8 @@ footer b{color:var(--muted)}
         <span><b>12</b> uffici</span>
         <span><b>11</b> risposte</span>
         <span><b>5</b> con dati</span>
-        <span class="reg-fire"><b>727</b> incendi · <b>22.715</b> ha</span>
+        <span class="reg-fire"><b>727</b> incendi · <b>22.715</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>4569</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>6129</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:90%"></span></div>
     </header>
@@ -475,7 +528,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -484,6 +538,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>25 sentenze: 17 condanne, 8 prescr.</td>
     <td class="num">287</td>
     <td class="num c-ha"><span class="heat" style="--h:0.780"></span>5874</td>
+    <td class="num">1775</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Nocera Inferiore</span><span class="uff-tipo">Tribunale · prov. Salerno</span></td>
@@ -491,6 +546,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">287</td>
     <td class="num c-ha"><span class="heat" style="--h:0.780"></span>5874</td>
+    <td class="num">1775</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Salerno</span><span class="uff-tipo">Tribunale</span></td>
@@ -498,6 +554,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">287</td>
     <td class="num c-ha"><span class="heat" style="--h:0.780"></span>5874</td>
+    <td class="num">1775</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Vallo della Lucania</span><span class="uff-tipo">Tribunale · prov. Salerno</span></td>
@@ -505,6 +562,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">287</td>
     <td class="num c-ha"><span class="heat" style="--h:0.780"></span>5874</td>
+    <td class="num">1775</td>
     <td class="c-nota">Confonde il FOIA con l'accesso civico semplice (errore giuridico di base).</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Napoli Nord (Aversa)</span><span class="uff-tipo">Tribunale · prov. Caserta</span></td>
@@ -512,6 +570,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>9 sentenze: 2 condanne, 5 prescr., 2 patteg. · 53 archiviazioni</td>
     <td class="num">209</td>
     <td class="num c-ha"><span class="heat" style="--h:0.825"></span>9695</td>
+    <td class="num">1446</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Santa Maria Capua Vetere</span><span class="uff-tipo">Tribunale · prov. Caserta</span></td>
@@ -519,6 +578,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">209</td>
     <td class="num c-ha"><span class="heat" style="--h:0.825"></span>9695</td>
+    <td class="num">1446</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Avellino</span><span class="uff-tipo">Tribunale</span></td>
@@ -526,6 +586,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>47 sentenze: 8 condanne, 25 assoluzioni, 3 prescr., 6 patteg., 5 promiscue · 808 archiviazioni</td>
     <td class="num">97</td>
     <td class="num c-ha"><span class="heat" style="--h:0.689"></span>2128</td>
+    <td class="num">434</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Benevento</span><span class="uff-tipo">Tribunale</span></td>
@@ -533,6 +594,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">88</td>
     <td class="num c-ha"><span class="heat" style="--h:0.715"></span>2829</td>
+    <td class="num">582</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Napoli</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -540,6 +602,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">46</td>
     <td class="num c-ha"><span class="heat" style="--h:0.692"></span>2189</td>
+    <td class="num">332</td>
     <td class="c-nota">Diniego motivato con il carico di lavoro della cancelleria "anche ai fini PNRR".</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Napoli</span><span class="uff-tipo">Tribunale</span></td>
@@ -547,6 +610,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">46</td>
     <td class="num c-ha"><span class="heat" style="--h:0.692"></span>2189</td>
+    <td class="num">332</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Nola</span><span class="uff-tipo">Tribunale · prov. Napoli</span></td>
@@ -554,6 +618,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>33 sentenze: 2 condanne, 24 assoluzioni, 1 prescr., 2 patteg., 4 altro · 874 archiviazioni</td>
     <td class="num">46</td>
     <td class="num c-ha"><span class="heat" style="--h:0.692"></span>2189</td>
+    <td class="num">332</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Torre Annunziata</span><span class="uff-tipo">Tribunale · prov. Napoli</span></td>
@@ -561,6 +626,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">46</td>
     <td class="num c-ha"><span class="heat" style="--h:0.692"></span>2189</td>
+    <td class="num">332</td>
     <td class="c-nota">Diniego "di principio": nega il diritto stesso del cittadino a controllare l'operato giudiziario.</td>
   </tr></tbody>
     </table></div>
@@ -572,7 +638,8 @@ footer b{color:var(--muted)}
         <span><b>9</b> uffici</span>
         <span><b>5</b> risposte</span>
         <span><b>2</b> con dati</span>
-        <span class="reg-fire"><b>297</b> incendi · <b>21.601</b> ha</span>
+        <span class="reg-fire"><b>297</b> incendi · <b>21.601</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>2446</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>2605</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:90%"></span></div>
     </header>
@@ -580,7 +647,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -589,6 +657,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">142</td>
     <td class="num c-ha"><span class="heat" style="--h:0.831"></span>10.312</td>
+    <td class="num">1354</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Taranto</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -596,6 +665,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">52</td>
     <td class="num c-ha"><span class="heat" style="--h:0.699"></span>2366</td>
+    <td class="num">227</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Taranto</span><span class="uff-tipo">Tribunale</span></td>
@@ -603,6 +673,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">52</td>
     <td class="num c-ha"><span class="heat" style="--h:0.699"></span>2366</td>
+    <td class="num">227</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Trani</span><span class="uff-tipo">Tribunale · prov. Barletta-Andria-Trani</span></td>
@@ -610,6 +681,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">45</td>
     <td class="num c-ha"><span class="heat" style="--h:0.753"></span>4337</td>
+    <td class="num">209</td>
     <td class="c-nota">Diniego citando una sentenza del 2016, anteriore all'entrata in vigore del FOIA.</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Bari</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -617,6 +689,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">34</td>
     <td class="num c-ha"><span class="heat" style="--h:0.733"></span>3485</td>
+    <td class="num">508</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Bari</span><span class="uff-tipo">Tribunale</span></td>
@@ -624,6 +697,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">34</td>
     <td class="num c-ha"><span class="heat" style="--h:0.733"></span>3485</td>
+    <td class="num">508</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Lecce</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -631,6 +705,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">20</td>
     <td class="num c-ha"><span class="heat" style="--h:0.625"></span>1049</td>
+    <td class="num">140</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Lecce</span><span class="uff-tipo">Tribunale</span></td>
@@ -638,6 +713,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">20</td>
     <td class="num c-ha"><span class="heat" style="--h:0.625"></span>1049</td>
+    <td class="num">140</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Brindisi</span><span class="uff-tipo">Tribunale</span></td>
@@ -645,6 +721,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">4</td>
     <td class="num c-ha"><span class="heat" style="--h:0.357"></span>52</td>
+    <td class="num">8</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -656,7 +733,8 @@ footer b{color:var(--muted)}
         <span><b>4</b> uffici</span>
         <span><b>4</b> risposte</span>
         <span><b>3</b> con dati</span>
-        <span class="reg-fire"><b>211</b> incendi · <b>11.332</b> ha</span>
+        <span class="reg-fire"><b>211</b> incendi · <b>11.332</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>1562</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>2051</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:84%"></span></div>
     </header>
@@ -664,7 +742,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -673,6 +752,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">115</td>
     <td class="num c-ha"><span class="heat" style="--h:0.794"></span>6814</td>
+    <td class="num">891</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Potenza</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -680,6 +760,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">96</td>
     <td class="num c-ha"><span class="heat" style="--h:0.757"></span>4518</td>
+    <td class="num">671</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Lagonegro</span><span class="uff-tipo">Tribunale · prov. Potenza</span></td>
@@ -687,6 +768,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">96</td>
     <td class="num c-ha"><span class="heat" style="--h:0.757"></span>4518</td>
+    <td class="num">671</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Potenza</span><span class="uff-tipo">Tribunale</span></td>
@@ -694,6 +776,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">96</td>
     <td class="num c-ha"><span class="heat" style="--h:0.757"></span>4518</td>
+    <td class="num">671</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -705,7 +788,8 @@ footer b{color:var(--muted)}
         <span><b>8</b> uffici</span>
         <span><b>6</b> risposte</span>
         <span><b>4</b> con dati</span>
-        <span class="reg-fire"><b>86</b> incendi · <b>6933</b> ha</span>
+        <span class="reg-fire"><b>86</b> incendi · <b>6933</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>729</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>9578</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:80%"></span></div>
     </header>
@@ -713,7 +797,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -722,6 +807,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">45</td>
     <td class="num c-ha"><span class="heat" style="--h:0.741"></span>3803</td>
+    <td class="num">345</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Nuoro</span><span class="uff-tipo">Tribunale</span></td>
@@ -729,6 +815,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">45</td>
     <td class="num c-ha"><span class="heat" style="--h:0.741"></span>3803</td>
+    <td class="num">345</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Sassari</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -736,6 +823,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">25</td>
     <td class="num c-ha"><span class="heat" style="--h:0.690"></span>2161</td>
+    <td class="num">217</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Sassari</span><span class="uff-tipo">Tribunale</span></td>
@@ -743,6 +831,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">25</td>
     <td class="num c-ha"><span class="heat" style="--h:0.690"></span>2161</td>
+    <td class="num">217</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Tempio Pausania</span><span class="uff-tipo">Tribunale · prov. Sassari</span></td>
@@ -750,6 +839,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">25</td>
     <td class="num c-ha"><span class="heat" style="--h:0.690"></span>2161</td>
+    <td class="num">217</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Oristano</span><span class="uff-tipo">Tribunale</span></td>
@@ -757,6 +847,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>34 sentenze: 5 condanne, 16 assoluzioni, 5 prescr., 8 patteg. · 216 archiviazioni</td>
     <td class="num">9</td>
     <td class="num c-ha"><span class="heat" style="--h:0.592"></span>722</td>
+    <td class="num">102</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Cagliari</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -764,6 +855,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>36 sentenze: 20 condanne, 10 assoluzioni, 3 prescr., 3 altro</td>
     <td class="num">7</td>
     <td class="num c-ha"><span class="heat" style="--h:0.496"></span>247</td>
+    <td class="num">65</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Cagliari</span><span class="uff-tipo">Tribunale</span></td>
@@ -771,6 +863,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">7</td>
     <td class="num c-ha"><span class="heat" style="--h:0.496"></span>247</td>
+    <td class="num">65</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -782,7 +875,8 @@ footer b{color:var(--muted)}
         <span><b>9</b> uffici</span>
         <span><b>7</b> risposte</span>
         <span><b>4</b> con dati</span>
-        <span class="reg-fire"><b>44</b> incendi · <b>4163</b> ha</span>
+        <span class="reg-fire"><b>44</b> incendi · <b>4163</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>626</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>853</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:75%"></span></div>
     </header>
@@ -790,7 +884,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -799,6 +894,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">19</td>
     <td class="num c-ha"><span class="heat" style="--h:0.687"></span>2073</td>
+    <td class="num">187</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Lanciano</span><span class="uff-tipo">Tribunale · prov. Chieti</span></td>
@@ -806,6 +902,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">19</td>
     <td class="num c-ha"><span class="heat" style="--h:0.687"></span>2073</td>
+    <td class="num">187</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Vasto</span><span class="uff-tipo">Tribunale · prov. Chieti</span></td>
@@ -813,6 +910,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">19</td>
     <td class="num c-ha"><span class="heat" style="--h:0.687"></span>2073</td>
+    <td class="num">187</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">L'Aquila</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -820,6 +918,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">14</td>
     <td class="num c-ha"><span class="heat" style="--h:0.650"></span>1379</td>
+    <td class="num">371</td>
     <td class="c-nota">Diniego: dati equiparati ad "atti giurisdizionali" e onere di rielaborazione.</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Avezzano</span><span class="uff-tipo">Tribunale · prov. L'Aquila</span></td>
@@ -827,6 +926,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">14</td>
     <td class="num c-ha"><span class="heat" style="--h:0.650"></span>1379</td>
+    <td class="num">371</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">L'Aquila</span><span class="uff-tipo">Tribunale</span></td>
@@ -834,6 +934,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>12 sentenze: 6 condanne, 1 assoluzioni, 1 patteg., 4 altro · 19 archiviazioni</td>
     <td class="num">14</td>
     <td class="num c-ha"><span class="heat" style="--h:0.650"></span>1379</td>
+    <td class="num">371</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Sulmona</span><span class="uff-tipo">Tribunale · prov. L'Aquila</span></td>
@@ -841,6 +942,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">14</td>
     <td class="num c-ha"><span class="heat" style="--h:0.650"></span>1379</td>
+    <td class="num">371</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Pescara</span><span class="uff-tipo">Tribunale</span></td>
@@ -848,6 +950,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>3 sentenze: 1 condanne, 2 patteg. · 1 archiviazioni</td>
     <td class="num">6</td>
     <td class="num c-ha"><span class="heat" style="--h:0.562"></span>516</td>
+    <td class="num">23</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Teramo</span><span class="uff-tipo">Tribunale</span></td>
@@ -855,6 +958,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">5</td>
     <td class="num c-ha"><span class="heat" style="--h:0.475"></span>195</td>
+    <td class="num">45</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -866,7 +970,8 @@ footer b{color:var(--muted)}
         <span><b>11</b> uffici</span>
         <span><b>8</b> risposte</span>
         <span><b>6</b> con dati</span>
-        <span class="reg-fire"><b>71</b> incendi · <b>3280</b> ha</span>
+        <span class="reg-fire"><b>71</b> incendi · <b>3280</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>1252</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>1331</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:73%"></span></div>
     </header>
@@ -874,7 +979,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -883,6 +989,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">17</td>
     <td class="num c-ha"><span class="heat" style="--h:0.640"></span>1236</td>
+    <td class="num">154</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Lucca</span><span class="uff-tipo">Tribunale</span></td>
@@ -890,6 +997,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">17</td>
     <td class="num c-ha"><span class="heat" style="--h:0.632"></span>1123</td>
+    <td class="num">828</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Massa</span><span class="uff-tipo">Tribunale · prov. Massa-Carrara</span></td>
@@ -897,6 +1005,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>11 sentenze: 4 condanne, 3 assoluzioni, 2 patteg., 2 altro · 25 archiviazioni</td>
     <td class="num">8</td>
     <td class="num c-ha"><span class="heat" style="--h:0.517"></span>313</td>
+    <td class="num">24</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Siena</span><span class="uff-tipo">Tribunale</span></td>
@@ -904,6 +1013,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">6</td>
     <td class="num c-ha"><span class="heat" style="--h:0.483"></span>214</td>
+    <td class="num">11</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Pisa</span><span class="uff-tipo">Tribunale</span></td>
@@ -911,6 +1021,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">5</td>
     <td class="num c-ha"><span class="heat" style="--h:0.433"></span>123</td>
+    <td class="num">102</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Pistoia</span><span class="uff-tipo">Tribunale</span></td>
@@ -918,6 +1029,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">5</td>
     <td class="num c-ha"><span class="heat" style="--h:0.396"></span>81</td>
+    <td class="num">72</td>
     <td class="c-nota">Rinvia al Ministero citando le linee guida che però dicono l'opposto.</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Livorno</span><span class="uff-tipo">Tribunale</span></td>
@@ -925,6 +1037,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">4</td>
     <td class="num c-ha"><span class="heat" style="--h:0.408"></span>93</td>
+    <td class="num">6</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Firenze</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -932,6 +1045,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.350"></span>48</td>
+    <td class="num">19</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Arezzo</span><span class="uff-tipo">Tribunale</span></td>
@@ -939,6 +1053,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.317"></span>33</td>
+    <td class="num">25</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Firenze</span><span class="uff-tipo">Tribunale</span></td>
@@ -946,6 +1061,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.350"></span>48</td>
+    <td class="num">19</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Prato</span><span class="uff-tipo">Tribunale</span></td>
@@ -953,6 +1069,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.255"></span>16</td>
+    <td class="num">11</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -964,7 +1081,8 @@ footer b{color:var(--muted)}
         <span><b>5</b> uffici</span>
         <span><b>4</b> risposte</span>
         <span><b>2</b> con dati</span>
-        <span class="reg-fire"><b>58</b> incendi · <b>2419</b> ha</span>
+        <span class="reg-fire"><b>58</b> incendi · <b>2419</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>918</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>1281</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:70%"></span></div>
     </header>
@@ -972,7 +1090,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -981,6 +1100,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">21</td>
     <td class="num c-ha"><span class="heat" style="--h:0.631"></span>1117</td>
+    <td class="num">266</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">La Spezia</span><span class="uff-tipo">Tribunale</span></td>
@@ -988,6 +1108,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">14</td>
     <td class="num c-ha"><span class="heat" style="--h:0.495"></span>245</td>
+    <td class="num">137</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Genova</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -995,6 +1116,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>29 sentenze: 21 condanne, 5 assoluzioni, 3 prescr.</td>
     <td class="num">12</td>
     <td class="num c-ha"><span class="heat" style="--h:0.503"></span>267</td>
+    <td class="num">78</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Genova</span><span class="uff-tipo">Tribunale</span></td>
@@ -1002,6 +1124,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">12</td>
     <td class="num c-ha"><span class="heat" style="--h:0.503"></span>267</td>
+    <td class="num">78</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Savona</span><span class="uff-tipo">Tribunale</span></td>
@@ -1009,6 +1132,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">11</td>
     <td class="num c-ha"><span class="heat" style="--h:0.600"></span>790</td>
+    <td class="num">437</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1020,7 +1144,8 @@ footer b{color:var(--muted)}
         <span><b>5</b> uffici</span>
         <span><b>5</b> risposte</span>
         <span><b>3</b> con dati</span>
-        <span class="reg-fire"><b>18</b> incendi · <b>1520</b> ha</span>
+        <span class="reg-fire"><b>18</b> incendi · <b>1520</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>1152</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>1186</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:66%"></span></div>
     </header>
@@ -1028,7 +1153,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1037,6 +1163,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">9</td>
     <td class="num c-ha"><span class="heat" style="--h:0.564"></span>532</td>
+    <td class="num">418</td>
     <td class="c-nota">Cita la finalità del FOIA e poi la svuota: "documentazione prima inesistente".</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Pordenone</span><span class="uff-tipo">Tribunale</span></td>
@@ -1044,6 +1171,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">6</td>
     <td class="num c-ha"><span class="heat" style="--h:0.365"></span>57</td>
+    <td class="num">40</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Gorizia</span><span class="uff-tipo">Tribunale</span></td>
@@ -1051,6 +1179,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.615"></span>931</td>
+    <td class="num">694</td>
     <td class="c-nota">Diniego invocando i "segreti commerciali" per un conteggio di sentenze.</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Trieste</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -1058,6 +1187,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Trieste</span><span class="uff-tipo">Tribunale</span></td>
@@ -1065,6 +1195,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1076,7 +1207,8 @@ footer b{color:var(--muted)}
         <span><b>4</b> uffici</span>
         <span><b>2</b> risposte</span>
         <span><b>2</b> con dati</span>
-        <span class="reg-fire"><b>29</b> incendi · <b>1194</b> ha</span>
+        <span class="reg-fire"><b>29</b> incendi · <b>1194</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>313</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>537</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:64%"></span></div>
     </header>
@@ -1084,7 +1216,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1093,6 +1226,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">18</td>
     <td class="num c-ha"><span class="heat" style="--h:0.594"></span>739</td>
+    <td class="num">261</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Perugia</span><span class="uff-tipo">Tribunale</span></td>
@@ -1100,6 +1234,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>42 sentenze: 9 condanne, 10 assoluzioni, 15 prescr., 4 patteg., 4 altro · 33 archiviazioni</td>
     <td class="num">18</td>
     <td class="num c-ha"><span class="heat" style="--h:0.594"></span>739</td>
+    <td class="num">261</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Spoleto</span><span class="uff-tipo">Tribunale · prov. Perugia</span></td>
@@ -1107,6 +1242,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">18</td>
     <td class="num c-ha"><span class="heat" style="--h:0.594"></span>739</td>
+    <td class="num">261</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Terni</span><span class="uff-tipo">Tribunale</span></td>
@@ -1114,6 +1250,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">11</td>
     <td class="num c-ha"><span class="heat" style="--h:0.550"></span>455</td>
+    <td class="num">52</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1125,7 +1262,8 @@ footer b{color:var(--muted)}
         <span><b>4</b> uffici</span>
         <span><b>3</b> risposte</span>
         <span><b>3</b> con dati</span>
-        <span class="reg-fire"><b>28</b> incendi · <b>750</b> ha</span>
+        <span class="reg-fire"><b>28</b> incendi · <b>750</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>55</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>182</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:60%"></span></div>
     </header>
@@ -1133,7 +1271,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1142,6 +1281,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">20</td>
     <td class="num c-ha"><span class="heat" style="--h:0.567"></span>547</td>
+    <td class="num">48</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Campobasso</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -1149,6 +1289,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>Nessuna sentenza nel periodo (zero)</td>
     <td class="num">8</td>
     <td class="num c-ha"><span class="heat" style="--h:0.478"></span>203</td>
+    <td class="num">7</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Campobasso</span><span class="uff-tipo">Tribunale</span></td>
@@ -1156,6 +1297,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>3 sentenze: 2 assoluzioni, 1 promiscue</td>
     <td class="num">8</td>
     <td class="num c-ha"><span class="heat" style="--h:0.478"></span>203</td>
+    <td class="num">7</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Larino</span><span class="uff-tipo">Tribunale · prov. Campobasso</span></td>
@@ -1163,6 +1305,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">8</td>
     <td class="num c-ha"><span class="heat" style="--h:0.478"></span>203</td>
+    <td class="num">7</td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1174,7 +1317,8 @@ footer b{color:var(--muted)}
         <span><b>10</b> uffici</span>
         <span><b>9</b> risposte</span>
         <span><b>7</b> con dati</span>
-        <span class="reg-fire"><b>17</b> incendi · <b>549</b> ha</span>
+        <span class="reg-fire"><b>17</b> incendi · <b>549</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>469</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>2068</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:57%"></span></div>
     </header>
@@ -1182,7 +1326,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1191,6 +1336,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>10 sentenze: 1 condanne, 6 assoluzioni, 2 patteg., 1 promiscue</td>
     <td class="num">13</td>
     <td class="num c-ha"><span class="heat" style="--h:0.556"></span>485</td>
+    <td class="num">447</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Torino</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -1198,6 +1344,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.370"></span>60</td>
+    <td class="num">18</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Ivrea</span><span class="uff-tipo">Tribunale · prov. Torino</span></td>
@@ -1205,6 +1352,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.370"></span>60</td>
+    <td class="num">18</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Torino</span><span class="uff-tipo">Tribunale</span></td>
@@ -1212,6 +1360,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>50 sentenze: 25 condanne, 11 assoluzioni, 14 patteg. · 89 archiviazioni</td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.370"></span>60</td>
+    <td class="num">18</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Alessandria</span><span class="uff-tipo">Tribunale</span></td>
@@ -1219,6 +1368,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.145"></span>4</td>
+    <td class="num">4</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Asti</span><span class="uff-tipo">Tribunale</span></td>
@@ -1226,6 +1376,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Biella</span><span class="uff-tipo">Tribunale</span></td>
@@ -1233,6 +1384,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>Nessuna sentenza nel periodo (zero)</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Novara</span><span class="uff-tipo">Tribunale</span></td>
@@ -1240,6 +1392,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Verbania</span><span class="uff-tipo">Tribunale · prov. Verbano-Cusio-Ossola</span></td>
@@ -1247,6 +1400,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Vercelli</span><span class="uff-tipo">Tribunale</span></td>
@@ -1254,6 +1408,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1265,7 +1420,8 @@ footer b{color:var(--muted)}
         <span><b>10</b> uffici</span>
         <span><b>9</b> risposte</span>
         <span><b>9</b> con dati</span>
-        <span class="reg-fire"><b>9</b> incendi · <b>453</b> ha</span>
+        <span class="reg-fire"><b>9</b> incendi · <b>453</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>148</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>168</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:55%"></span></div>
     </header>
@@ -1273,7 +1429,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1282,6 +1439,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>86 sentenze: 50 condanne, 12 assoluzioni, 23 prescr., 1 altro</td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.506"></span>278</td>
+    <td class="num">12</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Bologna</span><span class="uff-tipo">Tribunale</span></td>
@@ -1289,6 +1447,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>105 sentenze: 44 condanne, 24 assoluzioni, 8 prescr., 10 patteg., 19 altro · 113 archiviazioni</td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.506"></span>278</td>
+    <td class="num">12</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Parma</span><span class="uff-tipo">Tribunale</span></td>
@@ -1296,6 +1455,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">2</td>
     <td class="num c-ha"><span class="heat" style="--h:0.444"></span>139</td>
+    <td class="num">126</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Forlì</span><span class="uff-tipo">Tribunale · prov. Forlì-Cesena</span></td>
@@ -1303,6 +1463,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.265"></span>18</td>
+    <td class="num">9</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Modena</span><span class="uff-tipo">Tribunale</span></td>
@@ -1310,6 +1471,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.062"></span>1</td>
+    <td class="num">1</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Piacenza</span><span class="uff-tipo">Tribunale</span></td>
@@ -1317,6 +1479,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.145"></span>4</td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Reggio Emilia</span><span class="uff-tipo">Tribunale · prov. Reggio nell’Emilia</span></td>
@@ -1324,6 +1487,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.237"></span>13</td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Ferrara</span><span class="uff-tipo">Tribunale</span></td>
@@ -1331,6 +1495,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>27 sentenze: 7 assoluzioni, 1 patteg., 19 altro · 162 archiviazioni</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Ravenna</span><span class="uff-tipo">Tribunale</span></td>
@@ -1338,6 +1503,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>26 sentenze: 11 condanne, 9 assoluzioni, 3 patteg., 3 altro · 118 archiviazioni</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Rimini</span><span class="uff-tipo">Tribunale</span></td>
@@ -1345,6 +1511,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>56 sentenze: 12 condanne, 25 assoluzioni, 8 prescr., 7 patteg., 4 altro · 32 archiviazioni</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1356,7 +1523,8 @@ footer b{color:var(--muted)}
         <span><b>7</b> uffici</span>
         <span><b>6</b> risposte</span>
         <span><b>6</b> con dati</span>
-        <span class="reg-fire"><b>6</b> incendi · <b>87</b> ha</span>
+        <span class="reg-fire"><b>6</b> incendi · <b>87</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>7</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>35</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:40%"></span></div>
     </header>
@@ -1364,7 +1532,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1373,6 +1542,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">4</td>
     <td class="num c-ha"><span class="heat" style="--h:0.365"></span>57</td>
+    <td class="num">7</td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Ancona</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -1380,6 +1550,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>25 sentenze: 16 condanne, 4 assoluzioni, 4 prescr., 1 promiscue</td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.175"></span>6</td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Ancona</span><span class="uff-tipo">Tribunale</span></td>
@@ -1387,6 +1558,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.175"></span>6</td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Macerata</span><span class="uff-tipo">Tribunale</span></td>
@@ -1394,6 +1566,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.289"></span>24</td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Fermo</span><span class="uff-tipo">Tribunale</span></td>
@@ -1401,6 +1574,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>15 sentenze: 9 condanne, 3 assoluzioni, 2 prescr., 1 patteg. · 3 archiviazioni</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Pesaro</span><span class="uff-tipo">Tribunale · prov. Pesaro e Urbino</span></td>
@@ -1408,6 +1582,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Urbino</span><span class="uff-tipo">Tribunale · prov. Pesaro e Urbino</span></td>
@@ -1415,6 +1590,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1426,7 +1602,8 @@ footer b{color:var(--muted)}
         <span><b>1</b> uffici</span>
         <span><b>1</b> risposte</span>
         <span><b>0</b> con dati</span>
-        <span class="reg-fire"><b>0</b> incendi · <b>0</b> ha</span>
+        <span class="reg-fire"><b>0</b> incendi · <b>0</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>0</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>77</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:3%"></span></div>
     </header>
@@ -1434,7 +1611,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1443,6 +1621,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1454,7 +1633,8 @@ footer b{color:var(--muted)}
         <span><b>8</b> uffici</span>
         <span><b>6</b> risposte</span>
         <span><b>1</b> con dati</span>
-        <span class="reg-fire"><b>0</b> incendi · <b>0</b> ha</span>
+        <span class="reg-fire"><b>0</b> incendi · <b>0</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>0</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>588</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:3%"></span></div>
     </header>
@@ -1462,7 +1642,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1471,6 +1652,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Belluno</span><span class="uff-tipo">Tribunale</span></td>
@@ -1478,6 +1660,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>15 sentenze: 8 condanne, 5 assoluzioni, 2 altro · 218 archiviazioni</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Padova</span><span class="uff-tipo">Tribunale</span></td>
@@ -1485,6 +1668,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Rovigo</span><span class="uff-tipo">Tribunale</span></td>
@@ -1492,6 +1676,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Treviso</span><span class="uff-tipo">Tribunale</span></td>
@@ -1499,6 +1684,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Venezia</span><span class="uff-tipo">Tribunale</span></td>
@@ -1506,6 +1692,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Verona</span><span class="uff-tipo">Tribunale</span></td>
@@ -1513,6 +1700,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Vicenza</span><span class="uff-tipo">Tribunale</span></td>
@@ -1520,6 +1708,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1531,7 +1720,8 @@ footer b{color:var(--muted)}
         <span><b>15</b> uffici</span>
         <span><b>13</b> risposte</span>
         <span><b>8</b> con dati</span>
-        <span class="reg-fire"><b>0</b> incendi · <b>0</b> ha</span>
+        <span class="reg-fire"><b>0</b> incendi · <b>0</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>0</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>678</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:3%"></span></div>
     </header>
@@ -1539,7 +1729,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1548,6 +1739,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Milano</span><span class="uff-tipo">Corte d'Appello</span></td>
@@ -1555,6 +1747,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>85 sentenze: 82 condanne, 2 assoluzioni, 1 prescr.</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Bergamo</span><span class="uff-tipo">Tribunale</span></td>
@@ -1562,6 +1755,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>68 sentenze: 23 condanne, 19 assoluzioni, 5 prescr., 12 patteg., 9 altro · 496 archiviazioni</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Brescia</span><span class="uff-tipo">Tribunale</span></td>
@@ -1569,6 +1763,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota">Diniego per "richiesta massiva", citando la scopertura di organico.</td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Busto Arsizio</span><span class="uff-tipo">Tribunale · prov. Varese</span></td>
@@ -1576,6 +1771,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Como</span><span class="uff-tipo">Tribunale</span></td>
@@ -1583,6 +1779,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Cremona</span><span class="uff-tipo">Tribunale</span></td>
@@ -1590,6 +1787,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>1 sentenze: 1 altro · 3 archiviazioni</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Lecco</span><span class="uff-tipo">Tribunale</span></td>
@@ -1597,6 +1795,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Lodi</span><span class="uff-tipo">Tribunale</span></td>
@@ -1604,6 +1803,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>26 sentenze: 14 condanne, 12 assoluzioni · 34 archiviazioni</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Mantova</span><span class="uff-tipo">Tribunale</span></td>
@@ -1611,6 +1811,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Milano</span><span class="uff-tipo">Tribunale</span></td>
@@ -1618,6 +1819,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Monza</span><span class="uff-tipo">Tribunale · prov. Monza e della Brianza</span></td>
@@ -1625,6 +1827,7 @@ footer b{color:var(--muted)}
     <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>21 sentenze: 6 condanne, 3 assoluzioni, 12 patteg.</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Pavia</span><span class="uff-tipo">Tribunale</span></td>
@@ -1632,6 +1835,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Sondrio</span><span class="uff-tipo">Tribunale</span></td>
@@ -1639,6 +1843,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Varese</span><span class="uff-tipo">Tribunale</span></td>
@@ -1646,6 +1851,7 @@ footer b{color:var(--muted)}
     <td class="c-merito "></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
@@ -1657,7 +1863,8 @@ footer b{color:var(--muted)}
         <span><b>4</b> uffici</span>
         <span><b>4</b> risposte</span>
         <span><b>4</b> con dati</span>
-        <span class="reg-fire"><b>0</b> incendi · <b>0</b> ha</span>
+        <span class="reg-fire"><b>0</b> incendi · <b>0</b> ha bruciati</span>
+        <span class="reg-bosco">bosco: <b>0</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a> · <b>229</b> ha <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener" class="src">ISPRA</a></span>
       </div>
       <div class="reg-bar"><span style="width:3%"></span></div>
     </header>
@@ -1665,7 +1872,8 @@ footer b{color:var(--muted)}
       <thead><tr>
         <th>Ufficio</th><th>Esito</th><th>Dati forniti</th>
         <th class="num">Incendi<br><span class="th-sub">provincia, 5 anni</span></th>
-        <th class="num">Ettari<br><span class="th-sub">bruciati</span></th>
+        <th class="num">Ettari <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">totale bruciato, provincia</span></th>
+        <th class="num">Ettari di bosco <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener" class="src">EFFIS</a><br><span class="th-sub">latifoglie/conifere/miste, prov.</span></th>
         <th>Note</th>
       </tr></thead>
       <tbody><tr>
@@ -1674,6 +1882,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Bolzano</span><span class="uff-tipo">Tribunale</span></td>
@@ -1681,6 +1890,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Rovereto</span><span class="uff-tipo">Tribunale · prov. Trento</span></td>
@@ -1688,6 +1898,7 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr><tr>
     <td class="c-uff"><span class="uff-nome">Trento</span><span class="uff-tipo">Tribunale</span></td>
@@ -1695,13 +1906,18 @@ footer b{color:var(--muted)}
     <td class="c-merito pending">Dati forniti — dettaglio da estrarre</td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
+    <td class="num"><span class="z">0</span></td>
     <td class="c-nota"></td>
   </tr></tbody>
     </table></div>
   </section>
 
   <footer>
-    <b>Fonti.</b> Risposte: accessi civici generalizzati inviati il 23/05/2026 a 168 uffici (dati campagna, repo OnData). Incendi: EFFIS/Copernicus, Rapid Damage Assessment, periodo 1/4/2021–31/3/2026.<br>
+    <b>Fonti.</b> Risposte: accessi civici generalizzati inviati il 23/05/2026 a 168 uffici (dati campagna, repo OnData).
+    Incendi ed ettari per provincia (colonne <em>Ettari</em> e <em>Ettari di bosco</em>): nostra elaborazione su
+    <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/effis_incendi_province_2021-2026.csv" target="_blank" rel="noopener">dati EFFIS/Copernicus</a>, periodo 1/4/2021–31/3/2026.
+    Bosco per regione (confronto in intestazione): <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener">tabella ufficiale ISPRA</a>
+    2018–2025, somma 2021–2025 (ISPRA elabora anch'essa EFFIS, solo ecosistemi forestali, dettaglio solo regionale).<br>
     <b>Avvertenze.</b> I dati sul merito sono un'estrazione automatica da verificare. La provincia della sede non coincide con la giurisdizione (soprattutto per le corti d'appello e i tribunali non capoluogo). Nel campo provincia di EFFIS alcuni comuni sardi risultano mal classificati: i totali della Sardegna sono prudenziali.
   </footer>
 </div>
