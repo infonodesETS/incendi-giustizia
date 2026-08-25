@@ -1,0 +1,519 @@
+ufficio,tipo,grado,articolo,esito,numero,affidabilita,fonte
+# ESTRAZIONE AUTOMATICA - DA VERIFICARE A MANO. Vedi scratch/ e output/dati-forniti nel repo OnData.
+# articolo: 423 | 423bis_c1 | 423bis_c2 | 423bis | 449 | nd (non distinto per articolo)
+# esito: condanna | assoluzione | prescrizione | patteggiamento | promiscua | ndp_altro | concordato_appello | archiviazione_noti | archiviazione_ignoti | archiviazione | nessuna_sentenza | da_consolidare
+# CORTI D'APPELLO (II grado)
+Corte appello Palermo,CA,II,423,assoluzione,4,alta,Esito_II_grado_Incendi.xlsx
+Corte appello Palermo,CA,II,423,condanna,25,alta,Esito_II_grado_Incendi.xlsx
+Corte appello Palermo,CA,II,423bis,condanna,14,alta,Esito_II_grado_Incendi.xlsx
+Corte appello Palermo,CA,II,449,condanna,13,alta,Esito_II_grado_Incendi.xlsx
+Corte appello Palermo,CA,II,449,prescrizione,2,alta,Esito_II_grado_Incendi.xlsx
+Corte appello Salerno,CA,II,423,condanna,8,media,Dati_Accesso_civico.xlsx
+Corte appello Salerno,CA,II,423,prescrizione,3,media,Dati_Accesso_civico.xlsx
+Corte appello Salerno,CA,II,423bis_c1,condanna,2,media,Dati_Accesso_civico.xlsx
+Corte appello Salerno,CA,II,423bis_c2,condanna,2,media,Dati_Accesso_civico.xlsx
+Corte appello Salerno,CA,II,449,condanna,5,media,Dati_Accesso_civico.xlsx
+Corte appello Salerno,CA,II,449,prescrizione,5,media,Dati_Accesso_civico.xlsx
+Corte appello Caltanissetta,CA,II,423,condanna,13,alta,SENTENZE_INCENDIO_21_26 (md)
+Corte appello Caltanissetta,CA,II,423,concordato_appello,2,alta,SENTENZE_INCENDIO_21_26 (md)
+Corte appello Caltanissetta,CA,II,423bis_c1,condanna,3,alta,SENTENZE_INCENDIO_21_26 (md)
+Corte appello Caltanissetta,CA,II,449,condanna,1,alta,SENTENZE_INCENDIO_21_26 (md)
+Corte appello Caltanissetta,CA,II,449,assoluzione,1,alta,SENTENZE_INCENDIO_21_26 (md)
+Corte appello Caltanissetta,CA,II,449,prescrizione,1,alta,SENTENZE_INCENDIO_21_26 (md)
+Corte appello Genova,CA,II,423,condanna,12,media,Elenco_Esauriti_423 (xls)
+Corte appello Genova,CA,II,423,prescrizione,2,media,Elenco_Esauriti_423 (xls)
+Corte appello Genova,CA,II,423bis,condanna,4,media,Elenco_Esauriti_423bis (xls)
+Corte appello Genova,CA,II,423bis,assoluzione,2,media,Elenco_Esauriti_423bis (xls)
+Corte appello Genova,CA,II,423bis,prescrizione,1,media,Elenco_Esauriti_423bis (xls)
+Corte appello Genova,CA,II,449,condanna,5,media,Elenco_Esauriti_449 (xls)
+Corte appello Genova,CA,II,449,assoluzione,3,media,Elenco_Esauriti_449 (xls)
+Corte appello Ancona,CA,II,nd,condanna,16,media,Borruso_invio_dati.xlsx
+Corte appello Ancona,CA,II,nd,assoluzione,4,media,Borruso_invio_dati.xlsx
+Corte appello Ancona,CA,II,nd,prescrizione,4,media,Borruso_invio_dati.xlsx
+Corte appello Ancona,CA,II,nd,promiscua,1,media,Borruso_invio_dati.xlsx
+Corte appello Campobasso,CA,II,nd,nessuna_sentenza,0,alta,dato.md
+# TRIBUNALI (I grado)
+Tribunale di Agrigento,Tribunale,I,423,condanna,18,alta,Dati_statistici.xlsx
+Tribunale di Agrigento,Tribunale,I,423,assoluzione,5,alta,Dati_statistici.xlsx
+Tribunale di Agrigento,Tribunale,I,423,patteggiamento,2,alta,Dati_statistici.xlsx
+Tribunale di Agrigento,Tribunale,I,423,archiviazione,6,alta,Dati_statistici.xlsx
+Tribunale di Agrigento,Tribunale,I,449,condanna,4,alta,Dati_statistici.xlsx
+Tribunale di Agrigento,Tribunale,I,449,assoluzione,11,alta,Dati_statistici.xlsx
+Tribunale di Agrigento,Tribunale,I,449,archiviazione,2,alta,Dati_statistici.xlsx
+Tribunale di Avellino,Tribunale,I,nd,condanna,8,bassa,Report Totali (3 xlsx)
+Tribunale di Avellino,Tribunale,I,nd,assoluzione,25,bassa,Report Totali (3 xlsx)
+Tribunale di Avellino,Tribunale,I,nd,promiscua,5,bassa,Report Totali (3 xlsx)
+Tribunale di Avellino,Tribunale,I,nd,prescrizione,3,bassa,Report Totali (3 xlsx)
+Tribunale di Avellino,Tribunale,I,nd,patteggiamento,6,bassa,Report Totali (3 xlsx)
+Tribunale di Avellino,Tribunale,I,nd,archiviazione_noti,39,bassa,Report Totali (3 xlsx)
+Tribunale di Avellino,Tribunale,I,nd,archiviazione_ignoti,769,bassa,Report Totali (3 xlsx)
+Tribunale di Cuneo,Tribunale,I,423,condanna,1,alta,DATI_STAT.xlsx
+Tribunale di Cuneo,Tribunale,I,423,assoluzione,2,alta,DATI_STAT.xlsx
+Tribunale di Cuneo,Tribunale,I,423,patteggiamento,1,alta,DATI_STAT.xlsx
+Tribunale di Cuneo,Tribunale,I,423bis_c2,assoluzione,1,alta,DATI_STAT.xlsx
+Tribunale di Cuneo,Tribunale,I,449,assoluzione,3,alta,DATI_STAT.xlsx
+Tribunale di Cuneo,Tribunale,I,449,promiscua,1,alta,DATI_STAT.xlsx
+Tribunale di Cuneo,Tribunale,I,449,patteggiamento,1,alta,DATI_STAT.xlsx
+Tribunale di Lamezia Terme,Tribunale,I,423,archiviazione,15,alta,Worksheet.xlsx
+Tribunale di Lamezia Terme,Tribunale,I,423,assoluzione,2,alta,Worksheet.xlsx
+Tribunale di Lamezia Terme,Tribunale,I,423,patteggiamento,3,alta,Worksheet.xlsx
+Tribunale di Lamezia Terme,Tribunale,I,423bis_c2,archiviazione,2,alta,Worksheet.xlsx
+Tribunale di Lamezia Terme,Tribunale,I,423bis_c2,assoluzione,1,alta,Worksheet.xlsx
+Tribunale di Lamezia Terme,Tribunale,I,423bis_c2,patteggiamento,2,alta,Worksheet.xlsx
+Tribunale di Lamezia Terme,Tribunale,I,449,archiviazione,6,alta,Worksheet.xlsx
+Tribunale di Lamezia Terme,Tribunale,I,449,patteggiamento,1,alta,Worksheet.xlsx
+Tribunale di Locri,Tribunale,I,423,assoluzione,5,media,TRIBUNALE_LOCRI.xlsx
+Tribunale di Locri,Tribunale,I,423,condanna,3,media,TRIBUNALE_LOCRI.xlsx
+Tribunale di Locri,Tribunale,I,423bis_c1,assoluzione,1,media,TRIBUNALE_LOCRI.xlsx
+Tribunale di Locri,Tribunale,I,423bis_c2,condanna,1,media,TRIBUNALE_LOCRI.xlsx
+Tribunale di Locri,Tribunale,I,449,condanna,1,media,TRIBUNALE_LOCRI.xlsx
+Tribunale di Locri,Tribunale,I,449,assoluzione,2,media,TRIBUNALE_LOCRI.xlsx
+Tribunale di Lodi,Tribunale,I,423,condanna,6,alta,Sentenze_Reati_Incendio.xlsx
+Tribunale di Lodi,Tribunale,I,423,assoluzione,7,alta,Sentenze_Reati_Incendio.xlsx
+Tribunale di Lodi,Tribunale,I,423,archiviazione,26,alta,Sentenze_Reati_Incendio.xlsx
+Tribunale di Lodi,Tribunale,I,449,condanna,8,alta,Sentenze_Reati_Incendio.xlsx
+Tribunale di Lodi,Tribunale,I,449,assoluzione,5,alta,Sentenze_Reati_Incendio.xlsx
+Tribunale di Lodi,Tribunale,I,449,archiviazione,8,alta,Sentenze_Reati_Incendio.xlsx
+Tribunale di Monza,Tribunale,I,423,condanna,4,media,Prospetto GIP (xlsx)
+Tribunale di Monza,Tribunale,I,423,assoluzione,2,media,Prospetto GIP (xlsx)
+Tribunale di Monza,Tribunale,I,423,patteggiamento,7,media,Prospetto GIP (xlsx)
+Tribunale di Monza,Tribunale,I,449,condanna,2,media,Prospetto GIP (xlsx)
+Tribunale di Monza,Tribunale,I,449,assoluzione,1,media,Prospetto GIP (xlsx)
+Tribunale di Monza,Tribunale,I,449,patteggiamento,5,media,Prospetto GIP (xlsx)
+Tribunale di Napoli Nord (Aversa),Tribunale,I,423,prescrizione,4,media,PROSPETTO 423 e 449.xlsx
+Tribunale di Napoli Nord (Aversa),Tribunale,I,423,archiviazione,36,media,PROSPETTO 423 e 449.xlsx
+Tribunale di Napoli Nord (Aversa),Tribunale,I,423bis,archiviazione,1,media,PROSPETTO 423 e 449.xlsx
+Tribunale di Napoli Nord (Aversa),Tribunale,I,449,condanna,2,media,PROSPETTO 423 e 449.xlsx
+Tribunale di Napoli Nord (Aversa),Tribunale,I,449,prescrizione,1,media,PROSPETTO 423 e 449.xlsx
+Tribunale di Napoli Nord (Aversa),Tribunale,I,449,patteggiamento,2,media,PROSPETTO 423 e 449.xlsx
+Tribunale di Napoli Nord (Aversa),Tribunale,I,449,archiviazione,16,media,PROSPETTO 423 e 449.xlsx
+Tribunale di Oristano,Tribunale,I,423,condanna,2,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,423,assoluzione,10,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,423,prescrizione,5,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,423,patteggiamento,6,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,423,archiviazione_noti,16,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,423,archiviazione_ignoti,156,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,423bis_c1,patteggiamento,1,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,423bis_c1,archiviazione_noti,1,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,423bis_c1,archiviazione_ignoti,7,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,423bis_c2,assoluzione,1,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,449,condanna,3,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,449,assoluzione,5,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,449,patteggiamento,1,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,449,archiviazione_noti,21,alta,Statistica_incendi.xlsx
+Tribunale di Oristano,Tribunale,I,449,archiviazione_ignoti,15,alta,Statistica_incendi.xlsx
+Tribunale di Torino,Tribunale,I,423,condanna,18,alta,sintesi_dati.xlsx
+Tribunale di Torino,Tribunale,I,423,assoluzione,5,alta,sintesi_dati.xlsx
+Tribunale di Torino,Tribunale,I,423,patteggiamento,5,alta,sintesi_dati.xlsx
+Tribunale di Torino,Tribunale,I,423,archiviazione,39,alta,sintesi_dati.xlsx
+Tribunale di Torino,Tribunale,I,423bis_c1,archiviazione,1,alta,sintesi_dati.xlsx
+Tribunale di Torino,Tribunale,I,423bis_c2,archiviazione,4,alta,sintesi_dati.xlsx
+Tribunale di Torino,Tribunale,I,449,condanna,7,alta,sintesi_dati.xlsx
+Tribunale di Torino,Tribunale,I,449,assoluzione,6,alta,sintesi_dati.xlsx
+Tribunale di Torino,Tribunale,I,449,patteggiamento,9,alta,sintesi_dati.xlsx
+Tribunale di Torino,Tribunale,I,449,archiviazione,45,alta,sintesi_dati.xlsx
+Tribunale di Fermo,Tribunale,I,423,condanna,4,alta,Accesso_civico (md)
+Tribunale di Fermo,Tribunale,I,423,assoluzione,1,alta,Accesso_civico (md)
+Tribunale di Fermo,Tribunale,I,423bis_c1,condanna,1,alta,Accesso_civico (md)
+Tribunale di Fermo,Tribunale,I,423bis_c1,assoluzione,1,alta,Accesso_civico (md)
+Tribunale di Fermo,Tribunale,I,449,condanna,4,alta,Accesso_civico (md)
+Tribunale di Fermo,Tribunale,I,449,assoluzione,1,alta,Accesso_civico (md)
+Tribunale di Fermo,Tribunale,I,449,prescrizione,2,alta,Accesso_civico (md)
+Tribunale di Fermo,Tribunale,I,nd,patteggiamento,1,alta,Accesso_civico (md)
+Tribunale di Fermo,Tribunale,I,nd,archiviazione,3,alta,Accesso_civico (md)
+Tribunale di L'Aquila,Tribunale,I,nd,condanna,6,media,Dati_sentenze (md)
+Tribunale di L'Aquila,Tribunale,I,nd,patteggiamento,1,media,Dati_sentenze (md)
+Tribunale di L'Aquila,Tribunale,I,nd,assoluzione,1,media,Dati_sentenze (md)
+Tribunale di L'Aquila,Tribunale,I,nd,ndp_altro,4,media,Dati_sentenze (md)
+Tribunale di L'Aquila,Tribunale,I,nd,archiviazione,19,media,Dati_sentenze (md)
+Tribunale di Biella,Tribunale,I,nd,nessuna_sentenza,0,alta,scans (md)
+# UFFICI CHE HANNO FORNITO DATI MA DA CONSOLIDARE A MANO (elenchi di dettaglio, moduli ministeriali, scansioni)
+Corte appello Reggio Calabria,CA,II,nd,da_consolidare,,,scansioni
+Corte appello Trieste,CA,II,nd,da_consolidare,,,scansione illeggibile (OCR)
+Corte appello Potenza,CA,II,nd,da_consolidare,,,CCF_002811 (scansione)
+Tribunale di Ancona,Tribunale,I,nd,da_consolidare,,,moduli ministeriali M317 (GIP+MON)
+Tribunale di Ascoli Piceno,Tribunale,I,nd,da_consolidare,,,provv Presidente (md)
+Tribunale di Lecco,Tribunale,I,nd,da_consolidare,,,provv accoglimento (md)
+Tribunale di Lucca,Tribunale,I,nd,da_consolidare,,,Statistica dibattimento + GIP (scansioni)
+Tribunale di Messina,Tribunale,I,nd,da_consolidare,,,Reati incendio (scansioni)
+Tribunale di Novara,Tribunale,I,nd,da_consolidare,,,Elenco dettaglio (16030 righe) + definiti
+Tribunale di Reggio Emilia,Tribunale,I,nd,da_consolidare,,,risposta Presidente (solo PDF)
+Tribunale di Rovereto,Tribunale,I,nd,da_consolidare,,,FOIA 936-2026 (md)
+Tribunale di Urbino,Tribunale,I,nd,da_consolidare,,,RISPOSTA_ACCESSO_ATTI (md)
+Tribunale di Vercelli,Tribunale,I,nd,da_consolidare,,,esito finale (scansione)
+Tribunale di Viterbo,Tribunale,I,nd,da_consolidare,,,prot_1085 (md)
+# --- BATCH 2 estrazione automatica (elenchi con colonna Esito) + prospetti ---
+Corte appello Bologna,CA,II,423,condanna,31,alta,estrazione-auto
+Corte appello Bologna,CA,II,423,assoluzione,8,alta,estrazione-auto
+Corte appello Bologna,CA,II,423,prescrizione,11,alta,estrazione-auto
+Corte appello Bologna,CA,II,423,ndp_altro,1,alta,estrazione-auto
+Corte appello Bologna,CA,II,449,condanna,6,alta,estrazione-auto
+Corte appello Bologna,CA,II,449,assoluzione,2,alta,estrazione-auto
+Corte appello Bologna,CA,II,449,prescrizione,5,alta,estrazione-auto
+Corte appello Bologna,CA,II,423bis,prescrizione,1,alta,estrazione-auto
+Corte appello Bologna,CA,II,423bis_c2,condanna,2,alta,estrazione-auto
+Corte appello Bologna,CA,II,423bis_c2,assoluzione,1,alta,estrazione-auto
+Corte appello Bologna,CA,II,423bis_c2,prescrizione,2,alta,estrazione-auto
+Corte appello Bologna,CA,II,nd,condanna,9,alta,estrazione-auto
+Corte appello Bologna,CA,II,nd,assoluzione,1,alta,estrazione-auto
+Corte appello Bologna,CA,II,nd,prescrizione,4,alta,estrazione-auto
+Corte appello Bologna,CA,II,423bis_c1,condanna,2,alta,estrazione-auto
+Corte appello Cagliari,CA,II,423,condanna,11,media,estrazione-auto
+Corte appello Cagliari,CA,II,423,assoluzione,3,media,estrazione-auto
+Corte appello Cagliari,CA,II,423,prescrizione,1,media,estrazione-auto
+Corte appello Cagliari,CA,II,423,ndp_altro,3,media,estrazione-auto
+Corte appello Cagliari,CA,II,449,condanna,1,media,estrazione-auto
+Corte appello Cagliari,CA,II,449,assoluzione,2,media,estrazione-auto
+Corte appello Cagliari,CA,II,449,prescrizione,1,media,estrazione-auto
+Corte appello Cagliari,CA,II,423bis,condanna,3,media,estrazione-auto
+Corte appello Cagliari,CA,II,423bis,assoluzione,2,media,estrazione-auto
+Corte appello Cagliari,CA,II,nd,condanna,2,media,estrazione-auto
+Corte appello Cagliari,CA,II,nd,assoluzione,2,media,estrazione-auto
+Corte appello Cagliari,CA,II,423bis_c2,condanna,1,media,estrazione-auto
+Corte appello Cagliari,CA,II,423bis_c2,assoluzione,1,media,estrazione-auto
+Corte appello Cagliari,CA,II,423bis_c2,prescrizione,1,media,estrazione-auto
+Corte appello Cagliari,CA,II,423bis_c1,condanna,2,media,estrazione-auto
+Corte appello Milano,CA,II,423,condanna,62,media,estrazione-auto
+Corte appello Milano,CA,II,423,assoluzione,1,media,estrazione-auto
+Corte appello Milano,CA,II,449,condanna,11,media,estrazione-auto
+Corte appello Milano,CA,II,449,prescrizione,1,media,estrazione-auto
+Corte appello Milano,CA,II,nd,condanna,4,media,estrazione-auto
+Corte appello Milano,CA,II,423bis_c2,condanna,3,media,estrazione-auto
+Corte appello Milano,CA,II,423bis,condanna,2,media,estrazione-auto
+Corte appello Milano,CA,II,423bis,assoluzione,1,media,estrazione-auto
+Tribunale di Bergamo,Tribunale,I,nd,condanna,23,bassa,estrazione-auto
+Tribunale di Bergamo,Tribunale,I,nd,assoluzione,19,bassa,estrazione-auto
+Tribunale di Bergamo,Tribunale,I,nd,prescrizione,5,bassa,estrazione-auto
+Tribunale di Bergamo,Tribunale,I,nd,patteggiamento,12,bassa,estrazione-auto
+Tribunale di Bergamo,Tribunale,I,nd,ndp_altro,9,bassa,estrazione-auto
+Tribunale di Bergamo,Tribunale,I,nd,archiviazione,496,bassa,estrazione-auto
+Tribunale di Bologna,Tribunale,I,nd,condanna,44,media,estrazione-auto
+Tribunale di Bologna,Tribunale,I,nd,assoluzione,24,media,estrazione-auto
+Tribunale di Bologna,Tribunale,I,nd,prescrizione,8,media,estrazione-auto
+Tribunale di Bologna,Tribunale,I,nd,patteggiamento,10,media,estrazione-auto
+Tribunale di Bologna,Tribunale,I,nd,ndp_altro,19,media,estrazione-auto
+Tribunale di Bologna,Tribunale,I,nd,archiviazione,113,media,estrazione-auto
+Tribunale di Cremona,Tribunale,I,423,ndp_altro,1,bassa,estrazione-auto
+Tribunale di Cremona,Tribunale,I,nd,archiviazione,3,bassa,estrazione-auto
+Tribunale di Ferrara,Tribunale,I,nd,assoluzione,7,bassa,estrazione-auto
+Tribunale di Ferrara,Tribunale,I,nd,patteggiamento,1,bassa,estrazione-auto
+Tribunale di Ferrara,Tribunale,I,nd,ndp_altro,19,bassa,estrazione-auto
+Tribunale di Ferrara,Tribunale,I,nd,archiviazione,162,bassa,estrazione-auto
+Tribunale di Massa,Tribunale,I,nd,condanna,4,bassa,estrazione-auto
+Tribunale di Massa,Tribunale,I,nd,assoluzione,3,bassa,estrazione-auto
+Tribunale di Massa,Tribunale,I,nd,patteggiamento,2,bassa,estrazione-auto
+Tribunale di Massa,Tribunale,I,nd,ndp_altro,2,bassa,estrazione-auto
+Tribunale di Massa,Tribunale,I,nd,archiviazione,25,bassa,estrazione-auto
+Tribunale di Nola,Tribunale,I,nd,condanna,2,bassa,estrazione-auto
+Tribunale di Nola,Tribunale,I,nd,assoluzione,24,bassa,estrazione-auto
+Tribunale di Nola,Tribunale,I,nd,prescrizione,1,bassa,estrazione-auto
+Tribunale di Nola,Tribunale,I,nd,patteggiamento,2,bassa,estrazione-auto
+Tribunale di Nola,Tribunale,I,nd,ndp_altro,4,bassa,estrazione-auto
+Tribunale di Nola,Tribunale,I,nd,archiviazione,874,bassa,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423,condanna,7,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423,assoluzione,4,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423,prescrizione,8,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423,patteggiamento,1,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423,archiviazione,17,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,449,condanna,1,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,449,assoluzione,3,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,449,prescrizione,4,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,449,patteggiamento,1,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,449,ndp_altro,2,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,449,archiviazione,11,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,nd,condanna,1,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,nd,assoluzione,2,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,nd,prescrizione,1,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,nd,patteggiamento,1,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,nd,ndp_altro,2,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,nd,archiviazione,3,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423bis_c2,patteggiamento,1,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423bis_c2,archiviazione,2,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423bis_c1,prescrizione,1,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423bis,assoluzione,1,media,estrazione-auto
+Tribunale di Perugia,Tribunale,I,423bis,prescrizione,1,media,estrazione-auto
+Tribunale di Pescara,Tribunale,I,423bis,condanna,1,media,estrazione-auto
+Tribunale di Pescara,Tribunale,I,423bis,patteggiamento,2,media,estrazione-auto
+Tribunale di Pescara,Tribunale,I,423bis,archiviazione,1,media,estrazione-auto
+Tribunale di Ravenna,Tribunale,I,423,condanna,11,media,estrazione-auto
+Tribunale di Ravenna,Tribunale,I,423,assoluzione,5,media,estrazione-auto
+Tribunale di Ravenna,Tribunale,I,423,patteggiamento,3,media,estrazione-auto
+Tribunale di Ravenna,Tribunale,I,423,ndp_altro,3,media,estrazione-auto
+Tribunale di Ravenna,Tribunale,I,423,archiviazione,32,media,estrazione-auto
+Tribunale di Ravenna,Tribunale,I,nd,assoluzione,4,media,estrazione-auto
+Tribunale di Ravenna,Tribunale,I,nd,archiviazione,86,media,estrazione-auto
+Tribunale di Rimini,Tribunale,I,nd,condanna,12,media,estrazione-auto
+Tribunale di Rimini,Tribunale,I,nd,assoluzione,25,media,estrazione-auto
+Tribunale di Rimini,Tribunale,I,nd,prescrizione,8,media,estrazione-auto
+Tribunale di Rimini,Tribunale,I,nd,patteggiamento,7,media,estrazione-auto
+Tribunale di Rimini,Tribunale,I,nd,ndp_altro,4,media,estrazione-auto
+Tribunale di Rimini,Tribunale,I,nd,archiviazione,32,media,estrazione-auto
+Tribunale di Belluno,Tribunale,I,423,condanna,5,media,dati_incendio (prospetto)
+Tribunale di Belluno,Tribunale,I,423,assoluzione,2,media,dati_incendio (prospetto)
+Tribunale di Belluno,Tribunale,I,423,ndp_altro,1,media,dati_incendio (prospetto)
+Tribunale di Belluno,Tribunale,I,423bis_c2,condanna,1,media,dati_incendio (prospetto)
+Tribunale di Belluno,Tribunale,I,449,condanna,2,media,dati_incendio (prospetto)
+Tribunale di Belluno,Tribunale,I,449,assoluzione,3,media,dati_incendio (prospetto)
+Tribunale di Belluno,Tribunale,I,449,ndp_altro,1,media,dati_incendio (prospetto)
+Tribunale di Belluno,Tribunale,I,nd,archiviazione_ignoti,218,bassa,Elenco GIP ignoti
+Tribunale di Palermo,Tribunale,I,423,condanna,23,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423,assoluzione,26,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423,prescrizione,5,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423,patteggiamento,4,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423,archiviazione,20,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423bis,condanna,4,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423bis,assoluzione,3,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423bis_c2,condanna,6,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423bis_c2,assoluzione,1,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423bis_c2,patteggiamento,1,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,423bis_c2,archiviazione,1,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,449,condanna,6,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,449,assoluzione,18,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,449,prescrizione,3,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,449,patteggiamento,4,alta,FOIA_Dati_Reati_Incendio.xlsx
+Tribunale di Palermo,Tribunale,I,449,archiviazione,20,alta,FOIA_Dati_Reati_Incendio.xlsx
+# --- BATCH 3-4: prospetti/elenchi + dato.md del team + Verbania (24/08) ---
+Tribunale di Castrovillari,Tribunale,I,nd,condanna,27,media,prospetto sentenze
+Tribunale di Castrovillari,Tribunale,I,nd,assoluzione,20,media,prospetto sentenze
+Tribunale di Castrovillari,Tribunale,I,nd,prescrizione,9,media,prospetto sentenze
+Tribunale di Castrovillari,Tribunale,I,nd,patteggiamento,1,media,prospetto sentenze
+Tribunale di Castrovillari,Tribunale,I,nd,archiviazione,37,media,prospetto sentenze
+Tribunale di Foggia,Tribunale,I,423,condanna,3,alta,prospetto Foggia
+Tribunale di Foggia,Tribunale,I,423,assoluzione,1,alta,prospetto Foggia
+Tribunale di Foggia,Tribunale,I,423,archiviazione,147,alta,prospetto Foggia
+Tribunale di Foggia,Tribunale,I,423bis,condanna,2,alta,prospetto Foggia
+Tribunale di Foggia,Tribunale,I,423bis,assoluzione,2,alta,prospetto Foggia
+Tribunale di Foggia,Tribunale,I,423bis,patteggiamento,1,alta,prospetto Foggia
+Tribunale di Foggia,Tribunale,I,423bis,archiviazione,432,alta,prospetto Foggia
+Tribunale di Foggia,Tribunale,I,449,condanna,3,alta,prospetto Foggia
+Tribunale di Foggia,Tribunale,I,449,assoluzione,1,alta,prospetto Foggia
+Tribunale di Foggia,Tribunale,I,449,archiviazione,5,alta,prospetto Foggia
+Tribunale di Grosseto,Tribunale,I,423,condanna,4,alta,prospetto Grosseto
+Tribunale di Grosseto,Tribunale,I,423,assoluzione,2,alta,prospetto Grosseto
+Tribunale di Grosseto,Tribunale,I,423,patteggiamento,5,alta,prospetto Grosseto
+Tribunale di Grosseto,Tribunale,I,423,archiviazione,162,alta,prospetto Grosseto
+Tribunale di Grosseto,Tribunale,I,449,condanna,1,alta,prospetto Grosseto
+Tribunale di Grosseto,Tribunale,I,449,assoluzione,1,alta,prospetto Grosseto
+Tribunale di Grosseto,Tribunale,I,449,prescrizione,1,alta,prospetto Grosseto
+Tribunale di Grosseto,Tribunale,I,449,patteggiamento,4,alta,prospetto Grosseto
+Tribunale di Grosseto,Tribunale,I,449,archiviazione,214,alta,prospetto Grosseto
+Tribunale di Isernia,Tribunale,I,423,assoluzione,1,bassa,riepilogo Isernia
+Tribunale di Isernia,Tribunale,I,423,patteggiamento,1,bassa,riepilogo Isernia
+Tribunale di Isernia,Tribunale,I,423,archiviazione,1,bassa,riepilogo Isernia
+Tribunale di Isernia,Tribunale,I,449,condanna,1,bassa,riepilogo Isernia
+Tribunale di Isernia,Tribunale,I,449,assoluzione,1,bassa,riepilogo Isernia
+Tribunale di Isernia,Tribunale,I,449,patteggiamento,5,bassa,riepilogo Isernia
+Tribunale di Matera,Tribunale,I,423,condanna,5,alta,prospetto Matera
+Tribunale di Matera,Tribunale,I,423,assoluzione,10,alta,prospetto Matera
+Tribunale di Matera,Tribunale,I,423,patteggiamento,8,alta,prospetto Matera
+Tribunale di Matera,Tribunale,I,423,archiviazione,15,alta,prospetto Matera
+Tribunale di Matera,Tribunale,I,449,assoluzione,11,alta,prospetto Matera
+Tribunale di Matera,Tribunale,I,449,prescrizione,1,alta,prospetto Matera
+Tribunale di Matera,Tribunale,I,449,patteggiamento,8,alta,prospetto Matera
+Tribunale di Matera,Tribunale,I,449,archiviazione,15,alta,prospetto Matera
+Tribunale di Sassari,Tribunale,I,423,condanna,2,media,prospetto Sassari
+Tribunale di Sassari,Tribunale,I,423,assoluzione,2,media,prospetto Sassari
+Tribunale di Sassari,Tribunale,I,423,prescrizione,1,media,prospetto Sassari
+Tribunale di Sassari,Tribunale,I,423bis_c2,prescrizione,1,media,prospetto Sassari
+Tribunale di Sassari,Tribunale,I,423bis_c2,patteggiamento,1,media,prospetto Sassari
+Tribunale di Sassari,Tribunale,I,449,condanna,2,media,prospetto Sassari
+Tribunale di Sassari,Tribunale,I,449,assoluzione,25,media,prospetto Sassari
+Tribunale di Sassari,Tribunale,I,449,prescrizione,1,media,prospetto Sassari
+Tribunale di Siracusa,Tribunale,I,423,condanna,3,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423,assoluzione,4,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423,prescrizione,1,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423,archiviazione_ignoti,353,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423,archiviazione_noti,30,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423bis_c1,condanna,2,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423bis_c1,assoluzione,1,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423bis_c1,patteggiamento,2,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423bis_c1,archiviazione_ignoti,37,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423bis_c1,archiviazione_noti,1,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,423bis_c2,patteggiamento,1,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,449,condanna,2,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,449,assoluzione,8,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,449,prescrizione,2,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,449,patteggiamento,4,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,449,archiviazione_ignoti,27,media,prospetto Siracusa
+Tribunale di Siracusa,Tribunale,I,449,archiviazione_noti,29,media,prospetto Siracusa
+Tribunale di Genova,Tribunale,I,423,condanna,5,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,423,assoluzione,7,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,423,patteggiamento,3,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,423bis_c1,condanna,1,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,423bis_c1,assoluzione,1,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,423bis_c1,patteggiamento,1,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,423bis_c2,condanna,4,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,423bis_c2,assoluzione,5,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,423bis_c2,patteggiamento,14,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,449,condanna,5,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,449,assoluzione,6,alta,Statistica Incendi
+Tribunale di Genova,Tribunale,I,449,patteggiamento,7,alta,Statistica Incendi
+Tribunale di Milano,Tribunale,I,423,condanna,29,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,423,assoluzione,18,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,423,promiscua,8,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,423,patteggiamento,11,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,423,prescrizione,1,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,423,archiviazione_ignoti,695,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,423,archiviazione_noti,65,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,423bis_c2,condanna,1,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,423bis_c2,assoluzione,1,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,423bis_c2,archiviazione_ignoti,9,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,449,condanna,3,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,449,assoluzione,7,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,449,promiscua,4,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,449,patteggiamento,8,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,449,prescrizione,1,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,449,archiviazione_ignoti,53,alta,tabella dati Ufficio Innovazione
+Tribunale di Milano,Tribunale,I,449,archiviazione_noti,34,alta,tabella dati Ufficio Innovazione
+Tribunale di Salerno,Tribunale,I,423,condanna,5,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,423,assoluzione,7,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,423,prescrizione,7,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,423,archiviazione,312,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,423bis_c1,condanna,1,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,423bis_c1,prescrizione,1,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,423bis_c1,archiviazione,22,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,423bis_c2,condanna,1,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,423bis_c2,assoluzione,4,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,423bis_c2,prescrizione,3,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,449,condanna,1,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,449,assoluzione,2,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,449,prescrizione,10,alta,Dati incendio
+Tribunale di Salerno,Tribunale,I,449,archiviazione,53,alta,Dati incendio
+Tribunale di Trento,Tribunale,I,423,condanna,5,alta,Tabella dati Trento
+Tribunale di Trento,Tribunale,I,423,assoluzione,2,alta,Tabella dati Trento
+Tribunale di Trento,Tribunale,I,423,ndp_altro,5,alta,Tabella dati Trento
+Tribunale di Trento,Tribunale,I,423,patteggiamento,11,alta,Tabella dati Trento
+Tribunale di Trento,Tribunale,I,423,archiviazione,11,alta,Tabella dati Trento
+Tribunale di Trento,Tribunale,I,423bis,assoluzione,2,alta,Tabella dati Trento
+Tribunale di Trento,Tribunale,I,423bis,patteggiamento,3,alta,Tabella dati Trento
+Tribunale di Trento,Tribunale,I,423bis,archiviazione,2,alta,Tabella dati Trento
+Tribunale di Trento,Tribunale,I,449,assoluzione,3,alta,Tabella dati Trento
+Tribunale di Trento,Tribunale,I,449,archiviazione,5,alta,Tabella dati Trento
+Tribunale di Trieste,Tribunale,I,423,condanna,9,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,423,assoluzione,2,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,423,archiviazione_ignoti,73,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,423,archiviazione_noti,6,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,423bis_c1,archiviazione_ignoti,29,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,423bis_c1,archiviazione_noti,1,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,423bis_c2,archiviazione_ignoti,2,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,449,condanna,4,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,449,assoluzione,2,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,449,prescrizione,1,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,449,archiviazione_ignoti,40,media,z_dati_incendio
+Tribunale di Trieste,Tribunale,I,449,archiviazione_noti,7,media,z_dati_incendio
+Corte appello Roma,CA,II,423,condanna,54,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,423,assoluzione,13,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,423,prescrizione,24,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,423,ndp_altro,8,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,423bis,condanna,15,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,423bis,assoluzione,4,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,423bis,prescrizione,4,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,423bis,ndp_altro,2,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,449,condanna,9,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,449,assoluzione,3,alta,dato.md (tabella verificata a mano)
+Corte appello Roma,CA,II,449,prescrizione,4,alta,dato.md (tabella verificata a mano)
+Corte appello Sassari,CA,II,nd,condanna,3,media,dato.md (annotazione)
+Corte appello Trento,CA,II,nd,promiscua,1,media,dato.md
+Corte appello Trento,CA,II,nd,assoluzione,1,media,dato.md
+Tribunale di Caltanissetta,Tribunale,I,423,condanna,9,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,423,assoluzione,2,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,423,ndp_altro,3,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,423,patteggiamento,3,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,423,archiviazione,23,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,423bis_c1,assoluzione,1,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,423bis_c2,archiviazione,7,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,449,condanna,2,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,449,assoluzione,3,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,449,prescrizione,1,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,449,patteggiamento,1,alta,dato.md
+Tribunale di Caltanissetta,Tribunale,I,449,archiviazione,13,alta,dato.md
+Tribunale di Campobasso,Tribunale,I,423,assoluzione,2,alta,dato.md
+Tribunale di Campobasso,Tribunale,I,423,condanna,3,alta,dato.md
+Tribunale di Campobasso,Tribunale,I,423,archiviazione,17,alta,dato.md
+Tribunale di Campobasso,Tribunale,I,423bis_c1,archiviazione,4,alta,dato.md
+Tribunale di Campobasso,Tribunale,I,423bis_c2,condanna,1,alta,dato.md
+Tribunale di Campobasso,Tribunale,I,423bis_c2,assoluzione,1,alta,dato.md
+Tribunale di Campobasso,Tribunale,I,423bis_c2,archiviazione,3,alta,dato.md
+Tribunale di Campobasso,Tribunale,I,449,assoluzione,1,alta,dato.md
+Tribunale di Campobasso,Tribunale,I,449,archiviazione,1,alta,dato.md
+Tribunale di Catania,Tribunale,I,423,condanna,6,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,423,assoluzione,8,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,423,prescrizione,8,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,423,archiviazione_noti,78,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,423,archiviazione_ignoti,768,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,423bis_c1,condanna,1,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,423bis_c2,condanna,1,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,423bis,archiviazione_noti,7,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,423bis,archiviazione_ignoti,274,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,449,condanna,7,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,449,assoluzione,9,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,449,prescrizione,16,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,449,patteggiamento,1,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,449,archiviazione_noti,98,alta,dato.md (verificato a vista)
+Tribunale di Catania,Tribunale,I,449,archiviazione_ignoti,33,alta,dato.md (verificato a vista)
+Tribunale di Enna,Tribunale,I,423,condanna,1,media,dato.md (OCR, discrepanza totale)
+Tribunale di Enna,Tribunale,I,423,assoluzione,4,media,dato.md (OCR, discrepanza totale)
+Tribunale di Enna,Tribunale,I,423,ndp_altro,2,media,dato.md (OCR, discrepanza totale)
+Tribunale di Enna,Tribunale,I,423bis_c1,assoluzione,2,media,dato.md (OCR, discrepanza totale)
+Tribunale di Enna,Tribunale,I,423bis_c1,patteggiamento,1,media,dato.md (OCR, discrepanza totale)
+Tribunale di Enna,Tribunale,I,449,condanna,2,media,dato.md (OCR, discrepanza totale)
+Tribunale di Enna,Tribunale,I,449,assoluzione,5,media,dato.md (OCR, discrepanza totale)
+Tribunale di Enna,Tribunale,I,449,prescrizione,6,media,dato.md (OCR, discrepanza totale)
+Tribunale di Frosinone,Tribunale,I,423,condanna,2,media,dato.md (solo monocratico, GIP negato)
+Tribunale di Frosinone,Tribunale,I,423,prescrizione,1,media,dato.md (solo monocratico, GIP negato)
+Tribunale di Frosinone,Tribunale,I,423,archiviazione,10,media,dato.md (solo monocratico, GIP negato)
+Tribunale di Frosinone,Tribunale,I,423bis_c1,patteggiamento,1,media,dato.md (solo monocratico, GIP negato)
+Tribunale di Frosinone,Tribunale,I,423bis_c1,archiviazione,1,media,dato.md (solo monocratico, GIP negato)
+Tribunale di Frosinone,Tribunale,I,449,assoluzione,11,media,dato.md (solo monocratico, GIP negato)
+Tribunale di Frosinone,Tribunale,I,449,condanna,1,media,dato.md (solo monocratico, GIP negato)
+Tribunale di Frosinone,Tribunale,I,449,patteggiamento,1,media,dato.md (solo monocratico, GIP negato)
+Tribunale di Frosinone,Tribunale,I,449,archiviazione,2,media,dato.md (solo monocratico, GIP negato)
+Tribunale di Ivrea,Tribunale,I,nd,condanna,2,bassa,dato.md (dibattimento; GIP non consolidato)
+Tribunale di Ivrea,Tribunale,I,nd,patteggiamento,1,bassa,dato.md (dibattimento; GIP non consolidato)
+Tribunale di Latina,Tribunale,I,nd,nessuna_sentenza,0,alta,dato.md (zero)
+Tribunale di Potenza,Tribunale,I,423,assoluzione,2,alta,dato.md
+Tribunale di Potenza,Tribunale,I,423bis,assoluzione,1,alta,dato.md
+Tribunale di Potenza,Tribunale,I,423bis,condanna,1,alta,dato.md
+Tribunale di Potenza,Tribunale,I,423bis_c2,assoluzione,1,alta,dato.md
+Tribunale di Potenza,Tribunale,I,423bis_c2,condanna,1,alta,dato.md
+Tribunale di Potenza,Tribunale,I,449,assoluzione,3,alta,dato.md
+Tribunale di Spoleto,Tribunale,I,nd,prescrizione,1,media,dato.md (esiti non incrociati per articolo)
+Tribunale di Spoleto,Tribunale,I,nd,assoluzione,1,media,dato.md (esiti non incrociati per articolo)
+Tribunale di Spoleto,Tribunale,I,nd,condanna,2,media,dato.md (esiti non incrociati per articolo)
+Tribunale di Spoleto,Tribunale,I,nd,ndp_altro,3,media,dato.md (esiti non incrociati per articolo)
+Tribunale di Teramo,Tribunale,I,423,assoluzione,2,alta,dato.md (elenco sentenze)
+Tribunale di Teramo,Tribunale,I,423bis_c2,condanna,1,alta,dato.md (elenco sentenze)
+Tribunale di Teramo,Tribunale,I,449,condanna,3,alta,dato.md (elenco sentenze)
+Tribunale di Teramo,Tribunale,I,449,assoluzione,2,alta,dato.md (elenco sentenze)
+Tribunale di Termini Imerese,Tribunale,I,423,condanna,2,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423,assoluzione,1,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423,patteggiamento,1,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423,archiviazione_noti,18,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423,archiviazione_ignoti,531,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423bis_c1,condanna,2,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423bis_c1,patteggiamento,1,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423bis_c1,archiviazione_noti,15,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423bis_c1,archiviazione_ignoti,182,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423bis_c2,condanna,2,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423bis_c2,patteggiamento,1,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,423bis_c2,archiviazione_noti,3,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,449,condanna,1,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,449,assoluzione,1,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,449,prescrizione,2,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,449,archiviazione_noti,10,media,dato.md (GIP da OCR)
+Tribunale di Termini Imerese,Tribunale,I,449,archiviazione_ignoti,6,media,dato.md (GIP da OCR)
+Tribunale di Verbania,Tribunale,I,423,condanna,9,media,dato.md (GIP-GUP xlsx 24/08)
+Tribunale di Verbania,Tribunale,I,423,assoluzione,1,media,dato.md (dibattimento)
+Tribunale di Verbania,Tribunale,I,423,patteggiamento,5,media,dato.md (col. duplicata? da verificare)
+Tribunale di Verbania,Tribunale,I,423,archiviazione,5,media,dato.md (GIP-GUP xlsx 24/08)
+Tribunale di Verbania,Tribunale,I,423bis_c1,condanna,2,media,dato.md (GIP-GUP xlsx 24/08)
+Tribunale di Verbania,Tribunale,I,423bis_c1,patteggiamento,1,media,dato.md (col. duplicata? da verificare)
+Tribunale di Verbania,Tribunale,I,423bis_c1,archiviazione,1,media,dato.md (GIP-GUP xlsx 24/08)
+Tribunale di Verbania,Tribunale,I,423bis_c2,condanna,6,media,dato.md (GIP-GUP xlsx 24/08)
+Tribunale di Verbania,Tribunale,I,423bis_c2,assoluzione,2,media,dato.md (GIP-GUP xlsx 24/08)
+Tribunale di Verbania,Tribunale,I,423bis_c2,patteggiamento,5,media,dato.md (col. duplicata? da verificare)
+Tribunale di Verbania,Tribunale,I,423bis_c2,archiviazione,5,media,dato.md (GIP-GUP xlsx 24/08)
+Tribunale di Verbania,Tribunale,I,449,condanna,4,media,dato.md (GIP-GUP xlsx 24/08)
+Tribunale di Verbania,Tribunale,I,449,assoluzione,1,media,dato.md (dibattimento)
+Tribunale di Verbania,Tribunale,I,449,patteggiamento,2,media,dato.md (col. duplicata? da verificare)
+Tribunale di Verbania,Tribunale,I,449,archiviazione,2,media,dato.md (GIP-GUP xlsx 24/08)
