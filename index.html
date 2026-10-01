@@ -78,6 +78,10 @@ tbody tr:hover td{background:color-mix(in srgb,var(--accent) 4%,transparent)}
 .c-merito{min-width:230px;color:var(--muted)}
 .c-merito.detail{color:var(--ink)}
 .c-merito.pending{color:var(--faint);font-style:italic}
+.art-split{display:block;margin-top:5px;font-size:11.5px;color:var(--muted);line-height:1.45}
+.art-split b{color:var(--ink);font-weight:600}
+.art-split .nd{color:var(--faint)}
+.art-split.na{color:var(--faint);font-style:italic}
 .aff{font-size:10px;margin-right:6px;vertical-align:1px}
 .aff-verificata,.aff-alta{color:var(--ok-fg)} .aff-media{color:var(--warn-fg)} .aff-bassa{color:var(--no-fg)}
 .num{text-align:right;font-variant-numeric:tabular-nums;font-family:"IBM Plex Mono",monospace;font-size:13px;white-space:nowrap}
@@ -141,7 +145,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Agrigento</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>40 sentenze: 22 condanne, 16 assoluzioni, 2 patteg. · 8 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>40 sentenze: 22 condanne, 16 assoluzioni, 2 patteg. · 8 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 40 sent., 22 cond.</span></td>
     <td class="num">675</td>
     <td class="num c-ha"><span class="heat" style="--h:0.996"></span>64.946</td>
     <td class="num">4030</td>
@@ -149,7 +153,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Sciacca</span><span class="uff-tipo">Tribunale · prov. Agrigento</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>33 sentenze: 15 condanne, 13 assoluzioni, 5 patteg. · 8 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>33 sentenze: 15 condanne, 13 assoluzioni, 5 patteg. · 8 archiviazioni<span class="art-split"><b>boschivo</b> 3 sent., 1 cond. · <b>comune</b> 30 sent., 14 cond.</span></td>
     <td class="num">675</td>
     <td class="num c-ha"><span class="heat" style="--h:0.996"></span>64.946</td>
     <td class="num">4030</td>
@@ -173,7 +177,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Messina</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>7 sentenze: 3 condanne, 2 assoluzioni, 1 prescr., 1 patteg. · 45 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>7 sentenze: 3 condanne, 2 assoluzioni, 1 prescr., 1 patteg. · 45 archiviazioni<span class="art-split"><b>boschivo</b> 1 sent., 1 cond. · <b>comune</b> 6 sent., 2 cond.</span></td>
     <td class="num">552</td>
     <td class="num c-ha"><span class="heat" style="--h:0.891"></span>20.233</td>
     <td class="num">3364</td>
@@ -181,7 +185,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Patti</span><span class="uff-tipo">Tribunale · prov. Messina</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>32 sentenze: 8 condanne, 16 assoluzioni, 5 prescr., 2 patteg., 1 altro · 113 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>32 sentenze: 8 condanne, 16 assoluzioni, 5 prescr., 2 patteg., 1 altro · 113 archiviazioni<span class="art-split"><b>boschivo</b> 7 sent., 4 cond. · <b>comune</b> 25 sent., 4 cond.</span></td>
     <td class="num">552</td>
     <td class="num c-ha"><span class="heat" style="--h:0.891"></span>20.233</td>
     <td class="num">3364</td>
@@ -189,7 +193,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Palermo</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>58 sentenze: 52 condanne, 4 assoluzioni, 2 prescr.</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>58 sentenze: 52 condanne, 4 assoluzioni, 2 prescr.<span class="art-split"><b>boschivo</b> 14 sent., 14 cond. · <b>comune</b> 44 sent., 38 cond.</span></td>
     <td class="num">402</td>
     <td class="num c-ha"><span class="heat" style="--h:1.000"></span>67.677</td>
     <td class="num">7204</td>
@@ -197,7 +201,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Palermo</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>104 sentenze: 39 condanne, 48 assoluzioni, 8 prescr., 9 patteg. · 41 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>104 sentenze: 39 condanne, 48 assoluzioni, 8 prescr., 9 patteg. · 41 archiviazioni<span class="art-split"><b>boschivo</b> 15 sent., 10 cond. · <b>comune</b> 89 sent., 29 cond.</span></td>
     <td class="num">402</td>
     <td class="num c-ha"><span class="heat" style="--h:1.000"></span>67.677</td>
     <td class="num">7204</td>
@@ -205,7 +209,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Termini Imerese</span><span class="uff-tipo">Tribunale · prov. Palermo</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>14 sentenze: 7 condanne, 2 assoluzioni, 2 prescr., 3 patteg. · 765 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>14 sentenze: 7 condanne, 2 assoluzioni, 2 prescr., 3 patteg. · 765 archiviazioni<span class="art-split"><b>boschivo</b> 6 sent., 4 cond. · <b>comune</b> 8 sent., 3 cond.</span></td>
     <td class="num">402</td>
     <td class="num c-ha"><span class="heat" style="--h:1.000"></span>67.677</td>
     <td class="num">7204</td>
@@ -229,7 +233,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Catania</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>57 sentenze: 15 condanne, 17 assoluzioni, 24 prescr., 1 patteg. · 1258 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>57 sentenze: 15 condanne, 17 assoluzioni, 24 prescr., 1 patteg. · 1258 archiviazioni<span class="art-split"><b>boschivo</b> 2 sent., 2 cond. · <b>comune</b> 55 sent., 13 cond.</span></td>
     <td class="num">340</td>
     <td class="num c-ha"><span class="heat" style="--h:0.877"></span>17.274</td>
     <td class="num">2159</td>
@@ -237,7 +241,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Caltanissetta</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>21 sentenze: 17 condanne, 1 assoluzioni, 1 prescr., 2 altro</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>21 sentenze: 17 condanne, 1 assoluzioni, 1 prescr., 2 altro<span class="art-split"><b>boschivo</b> 3 sent., 3 cond. · <b>comune</b> 18 sent., 14 cond.</span></td>
     <td class="num">336</td>
     <td class="num c-ha"><span class="heat" style="--h:0.927"></span>30.035</td>
     <td class="num">3820</td>
@@ -245,7 +249,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Caltanissetta</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>25 sentenze: 11 condanne, 6 assoluzioni, 1 prescr., 4 patteg., 3 altro · 43 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>25 sentenze: 11 condanne, 6 assoluzioni, 1 prescr., 4 patteg., 3 altro · 43 archiviazioni<span class="art-split"><b>boschivo</b> 1 sent., 0 cond. · <b>comune</b> 24 sent., 11 cond.</span></td>
     <td class="num">336</td>
     <td class="num c-ha"><span class="heat" style="--h:0.927"></span>30.035</td>
     <td class="num">3820</td>
@@ -261,7 +265,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Siracusa</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>30 sentenze: 7 condanne, 13 assoluzioni, 3 prescr., 7 patteg. · 477 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>30 sentenze: 7 condanne, 13 assoluzioni, 3 prescr., 7 patteg. · 477 archiviazioni<span class="art-split"><b>boschivo</b> 6 sent., 2 cond. · <b>comune</b> 24 sent., 5 cond.</span></td>
     <td class="num">201</td>
     <td class="num c-ha"><span class="heat" style="--h:0.854"></span>13.327</td>
     <td class="num">1023</td>
@@ -269,7 +273,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Enna</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>23 sentenze: 3 condanne, 11 assoluzioni, 6 prescr., 1 patteg., 2 altro</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>23 sentenze: 3 condanne, 11 assoluzioni, 6 prescr., 1 patteg., 2 altro<span class="art-split"><b>boschivo</b> 3 sent., 0 cond. · <b>comune</b> 20 sent., 3 cond.</span></td>
     <td class="num">169</td>
     <td class="num c-ha"><span class="heat" style="--h:0.894"></span>20.715</td>
     <td class="num">6643</td>
@@ -277,7 +281,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Marsala</span><span class="uff-tipo">Tribunale · prov. Trapani</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>26 sentenze: 13 condanne, 7 assoluzioni, 1 prescr., 2 patteg., 3 altro · 31 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>26 sentenze: 13 condanne, 7 assoluzioni, 1 prescr., 2 patteg., 3 altro · 31 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 26 sent., 13 cond.</span></td>
     <td class="num">109</td>
     <td class="num c-ha"><span class="heat" style="--h:0.892"></span>20.280</td>
     <td class="num">1875</td>
@@ -324,7 +328,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Castrovillari</span><span class="uff-tipo">Tribunale · prov. Cosenza</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>57 sentenze: 27 condanne, 20 assoluzioni, 9 prescr., 1 patteg. · 37 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>57 sentenze: 27 condanne, 20 assoluzioni, 9 prescr., 1 patteg. · 37 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">923</td>
     <td class="num c-ha"><span class="heat" style="--h:0.917"></span>26.942</td>
     <td class="num">7336</td>
@@ -340,7 +344,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Paola</span><span class="uff-tipo">Tribunale · prov. Cosenza</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>9 sentenze: 1 condanne, 4 assoluzioni, 3 prescr., 1 altro · 82 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>9 sentenze: 1 condanne, 4 assoluzioni, 3 prescr., 1 altro · 82 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 9 sent., 1 cond.</span></td>
     <td class="num">923</td>
     <td class="num c-ha"><span class="heat" style="--h:0.917"></span>26.942</td>
     <td class="num">7336</td>
@@ -356,7 +360,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Locri</span><span class="uff-tipo">Tribunale · prov. Reggio di Calabria</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>13 sentenze: 5 condanne, 8 assoluzioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>13 sentenze: 5 condanne, 8 assoluzioni<span class="art-split"><b>boschivo</b> 2 sent., 1 cond. · <b>comune</b> 11 sent., 4 cond.</span></td>
     <td class="num">720</td>
     <td class="num c-ha"><span class="heat" style="--h:0.956"></span>41.396</td>
     <td class="num">11.095</td>
@@ -412,7 +416,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Lamezia Terme</span><span class="uff-tipo">Tribunale · prov. Catanzaro</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>9 sentenze: 3 assoluzioni, 6 patteg. · 23 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>9 sentenze: 3 assoluzioni, 6 patteg. · 23 archiviazioni<span class="art-split"><b>boschivo</b> 3 sent., 0 cond. · <b>comune</b> 6 sent., 0 cond.</span></td>
     <td class="num">216</td>
     <td class="num c-ha"><span class="heat" style="--h:0.820"></span>9169</td>
     <td class="num">3860</td>
@@ -459,7 +463,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Frosinone</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>17 sentenze: 3 condanne, 11 assoluzioni, 1 prescr., 2 patteg. · 13 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>17 sentenze: 3 condanne, 11 assoluzioni, 1 prescr., 2 patteg. · 13 archiviazioni<span class="art-split"><b>boschivo</b> 1 sent., 0 cond. · <b>comune</b> 16 sent., 3 cond.</span></td>
     <td class="num">186</td>
     <td class="num c-ha"><span class="heat" style="--h:0.797"></span>7091</td>
     <td class="num">984</td>
@@ -467,7 +471,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Roma</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>140 sentenze: 78 condanne, 20 assoluzioni, 32 prescr., 10 altro</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>140 sentenze: 78 condanne, 20 assoluzioni, 32 prescr., 10 altro<span class="art-split"><b>boschivo</b> 25 sent., 15 cond. · <b>comune</b> 115 sent., 63 cond.</span></td>
     <td class="num">57</td>
     <td class="num c-ha"><span class="heat" style="--h:0.716"></span>2887</td>
     <td class="num">340</td>
@@ -507,7 +511,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Viterbo</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>27 sentenze: 1 condanne, 14 assoluzioni, 6 prescr., 3 patteg., 3 altro · 445 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>27 sentenze: 1 condanne, 14 assoluzioni, 6 prescr., 3 patteg., 3 altro · 445 archiviazioni<span class="art-split"><b>boschivo</b> 4 sent., 0 cond. · <b>comune</b> 23 sent., 1 cond.</span></td>
     <td class="num">23</td>
     <td class="num c-ha"><span class="heat" style="--h:0.575"></span>600</td>
     <td class="num">158</td>
@@ -546,7 +550,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Salerno</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>25 sentenze: 17 condanne, 8 prescr.</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>25 sentenze: 17 condanne, 8 prescr.<span class="art-split"><b>boschivo</b> 4 sent., 4 cond. · <b>comune</b> 21 sent., 13 cond.</span></td>
     <td class="num">287</td>
     <td class="num c-ha"><span class="heat" style="--h:0.780"></span>5874</td>
     <td class="num">1775</td>
@@ -562,7 +566,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Salerno</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>42 sentenze: 8 condanne, 13 assoluzioni, 21 prescr. · 387 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>42 sentenze: 8 condanne, 13 assoluzioni, 21 prescr. · 387 archiviazioni<span class="art-split"><b>boschivo</b> 10 sent., 2 cond. · <b>comune</b> 32 sent., 6 cond.</span></td>
     <td class="num">287</td>
     <td class="num c-ha"><span class="heat" style="--h:0.780"></span>5874</td>
     <td class="num">1775</td>
@@ -578,7 +582,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Napoli Nord (Aversa)</span><span class="uff-tipo">Tribunale · prov. Caserta</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>9 sentenze: 2 condanne, 5 prescr., 2 patteg. · 53 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>9 sentenze: 2 condanne, 5 prescr., 2 patteg. · 53 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 9 sent., 2 cond.</span></td>
     <td class="num">209</td>
     <td class="num c-ha"><span class="heat" style="--h:0.825"></span>9695</td>
     <td class="num">1446</td>
@@ -594,7 +598,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Avellino</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>47 sentenze: 8 condanne, 25 assoluzioni, 3 prescr., 6 patteg., 5 promiscue · 808 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>47 sentenze: 8 condanne, 25 assoluzioni, 3 prescr., 6 patteg., 5 promiscue · 808 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">97</td>
     <td class="num c-ha"><span class="heat" style="--h:0.689"></span>2128</td>
     <td class="num">434</td>
@@ -626,7 +630,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Nola</span><span class="uff-tipo">Tribunale · prov. Napoli</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>33 sentenze: 2 condanne, 24 assoluzioni, 1 prescr., 2 patteg., 4 altro · 874 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>33 sentenze: 2 condanne, 24 assoluzioni, 1 prescr., 2 patteg., 4 altro · 874 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">46</td>
     <td class="num c-ha"><span class="heat" style="--h:0.692"></span>2189</td>
     <td class="num">332</td>
@@ -665,7 +669,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Foggia</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>13 sentenze: 8 condanne, 4 assoluzioni, 1 patteg. · 584 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>13 sentenze: 8 condanne, 4 assoluzioni, 1 patteg. · 584 archiviazioni<span class="art-split"><b>boschivo</b> 5 sent., 2 cond. · <b>comune</b> 8 sent., 6 cond.</span></td>
     <td class="num">142</td>
     <td class="num c-ha"><span class="heat" style="--h:0.831"></span>10.312</td>
     <td class="num">1354</td>
@@ -681,7 +685,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Taranto</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>43 sentenze: 13 condanne, 7 assoluzioni, 13 prescr., 9 patteg., 1 altro · 1164 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>43 sentenze: 13 condanne, 7 assoluzioni, 13 prescr., 9 patteg., 1 altro · 1164 archiviazioni<span class="art-split"><b>boschivo</b> 8 sent., 4 cond. · <b>comune</b> 35 sent., 9 cond.</span></td>
     <td class="num">52</td>
     <td class="num c-ha"><span class="heat" style="--h:0.699"></span>2366</td>
     <td class="num">227</td>
@@ -713,7 +717,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Lecce</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>26 sentenze: 22 condanne, 3 assoluzioni, 1 prescr.</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>26 sentenze: 22 condanne, 3 assoluzioni, 1 prescr.<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 26 sent., 22 cond.</span></td>
     <td class="num">20</td>
     <td class="num c-ha"><span class="heat" style="--h:0.625"></span>1049</td>
     <td class="num">140</td>
@@ -760,7 +764,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Matera</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>43 sentenze: 5 condanne, 21 assoluzioni, 1 prescr., 16 patteg. · 30 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>43 sentenze: 5 condanne, 21 assoluzioni, 1 prescr., 16 patteg. · 30 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 43 sent., 5 cond.</span></td>
     <td class="num">115</td>
     <td class="num c-ha"><span class="heat" style="--h:0.794"></span>6814</td>
     <td class="num">891</td>
@@ -784,7 +788,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Potenza</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>9 sentenze: 2 condanne, 7 assoluzioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>9 sentenze: 2 condanne, 7 assoluzioni<span class="art-split"><b>boschivo</b> 4 sent., 2 cond. · <b>comune</b> 5 sent., 0 cond.</span></td>
     <td class="num">96</td>
     <td class="num c-ha"><span class="heat" style="--h:0.757"></span>4518</td>
     <td class="num">671</td>
@@ -831,7 +835,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Sassari</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>3 sentenze: 3 condanne</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>3 sentenze: 3 condanne<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">25</td>
     <td class="num c-ha"><span class="heat" style="--h:0.690"></span>2161</td>
     <td class="num">217</td>
@@ -839,7 +843,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Sassari</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>35 sentenze: 4 condanne, 27 assoluzioni, 3 prescr., 1 patteg.</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>35 sentenze: 4 condanne, 27 assoluzioni, 3 prescr., 1 patteg.<span class="art-split"><b>boschivo</b> 2 sent., 0 cond. · <b>comune</b> 33 sent., 4 cond.</span></td>
     <td class="num">25</td>
     <td class="num c-ha"><span class="heat" style="--h:0.690"></span>2161</td>
     <td class="num">217</td>
@@ -855,7 +859,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Oristano</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>34 sentenze: 5 condanne, 16 assoluzioni, 5 prescr., 8 patteg. · 216 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>34 sentenze: 5 condanne, 16 assoluzioni, 5 prescr., 8 patteg. · 216 archiviazioni<span class="art-split"><b>boschivo</b> 2 sent., 0 cond. · <b>comune</b> 32 sent., 5 cond.</span></td>
     <td class="num">9</td>
     <td class="num c-ha"><span class="heat" style="--h:0.592"></span>722</td>
     <td class="num">102</td>
@@ -863,7 +867,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Cagliari</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>36 sentenze: 20 condanne, 10 assoluzioni, 3 prescr., 3 altro</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>36 sentenze: 20 condanne, 10 assoluzioni, 3 prescr., 3 altro<span class="art-split"><b>boschivo</b> 10 sent., 6 cond. · <b>comune</b> 22 sent., 12 cond. · <span class="nd">4 senza articolo</span></span></td>
     <td class="num">7</td>
     <td class="num c-ha"><span class="heat" style="--h:0.496"></span>247</td>
     <td class="num">65</td>
@@ -934,7 +938,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Avezzano</span><span class="uff-tipo">Tribunale · prov. L'Aquila</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>23 sentenze: 5 condanne, 5 assoluzioni, 6 prescr., 7 patteg. · 79 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>23 sentenze: 5 condanne, 5 assoluzioni, 6 prescr., 7 patteg. · 79 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">14</td>
     <td class="num c-ha"><span class="heat" style="--h:0.650"></span>1379</td>
     <td class="num">371</td>
@@ -942,7 +946,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">L'Aquila</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>12 sentenze: 6 condanne, 1 assoluzioni, 1 patteg., 4 altro · 19 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>12 sentenze: 6 condanne, 1 assoluzioni, 1 patteg., 4 altro · 19 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">14</td>
     <td class="num c-ha"><span class="heat" style="--h:0.650"></span>1379</td>
     <td class="num">371</td>
@@ -958,7 +962,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Pescara</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>3 sentenze: 1 condanne, 2 patteg. · 1 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>3 sentenze: 1 condanne, 2 patteg. · 1 archiviazioni<span class="art-split"><b>boschivo</b> 3 sent., 1 cond. · <b>comune</b> 0 sent.</span></td>
     <td class="num">6</td>
     <td class="num c-ha"><span class="heat" style="--h:0.562"></span>516</td>
     <td class="num">23</td>
@@ -966,7 +970,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Teramo</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>8 sentenze: 4 condanne, 4 assoluzioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>8 sentenze: 4 condanne, 4 assoluzioni<span class="art-split"><b>boschivo</b> 1 sent., 1 cond. · <b>comune</b> 7 sent., 3 cond.</span></td>
     <td class="num">5</td>
     <td class="num c-ha"><span class="heat" style="--h:0.475"></span>195</td>
     <td class="num">45</td>
@@ -997,7 +1001,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Grosseto</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>18 sentenze: 5 condanne, 3 assoluzioni, 1 prescr., 9 patteg. · 376 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>18 sentenze: 5 condanne, 3 assoluzioni, 1 prescr., 9 patteg. · 376 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 18 sent., 5 cond.</span></td>
     <td class="num">17</td>
     <td class="num c-ha"><span class="heat" style="--h:0.640"></span>1236</td>
     <td class="num">154</td>
@@ -1005,7 +1009,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Lucca</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>28 sentenze: 10 condanne, 8 assoluzioni, 10 patteg.</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>28 sentenze: 10 condanne, 8 assoluzioni, 10 patteg.<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 28 sent., 10 cond.</span></td>
     <td class="num">17</td>
     <td class="num c-ha"><span class="heat" style="--h:0.632"></span>1123</td>
     <td class="num">828</td>
@@ -1013,7 +1017,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Massa</span><span class="uff-tipo">Tribunale · prov. Massa-Carrara</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>11 sentenze: 4 condanne, 3 assoluzioni, 2 patteg., 2 altro · 25 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>11 sentenze: 4 condanne, 3 assoluzioni, 2 patteg., 2 altro · 25 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">8</td>
     <td class="num c-ha"><span class="heat" style="--h:0.517"></span>313</td>
     <td class="num">24</td>
@@ -1029,7 +1033,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Pisa</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>48 sentenze: 16 condanne, 12 assoluzioni, 1 prescr., 13 patteg., 6 altro · 448 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>48 sentenze: 16 condanne, 12 assoluzioni, 1 prescr., 13 patteg., 6 altro · 448 archiviazioni<span class="art-split"><b>boschivo</b> 16 sent., 6 cond. · <b>comune</b> 32 sent., 10 cond.</span></td>
     <td class="num">5</td>
     <td class="num c-ha"><span class="heat" style="--h:0.433"></span>123</td>
     <td class="num">102</td>
@@ -1077,7 +1081,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Prato</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>22 sentenze: 11 condanne, 1 assoluzioni, 2 prescr., 7 patteg., 1 altro · 194 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>22 sentenze: 11 condanne, 1 assoluzioni, 2 prescr., 7 patteg., 1 altro · 194 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 5 sent., 2 cond. · <span class="nd">17 senza articolo</span></span></td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.255"></span>16</td>
     <td class="num">11</td>
@@ -1124,7 +1128,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Genova</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>29 sentenze: 21 condanne, 5 assoluzioni, 3 prescr.</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>29 sentenze: 21 condanne, 5 assoluzioni, 3 prescr.<span class="art-split"><b>boschivo</b> 7 sent., 4 cond. · <b>comune</b> 22 sent., 17 cond.</span></td>
     <td class="num">12</td>
     <td class="num c-ha"><span class="heat" style="--h:0.503"></span>267</td>
     <td class="num">78</td>
@@ -1132,7 +1136,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Genova</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>59 sentenze: 15 condanne, 19 assoluzioni, 25 patteg.</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>59 sentenze: 15 condanne, 19 assoluzioni, 25 patteg.<span class="art-split"><b>boschivo</b> 26 sent., 5 cond. · <b>comune</b> 33 sent., 10 cond.</span></td>
     <td class="num">12</td>
     <td class="num c-ha"><span class="heat" style="--h:0.503"></span>267</td>
     <td class="num">78</td>
@@ -1179,7 +1183,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Pordenone</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>25 sentenze: 6 condanne, 17 patteg., 2 altro · 194 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>25 sentenze: 6 condanne, 17 patteg., 2 altro · 194 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 25 sent., 6 cond.</span></td>
     <td class="num">6</td>
     <td class="num c-ha"><span class="heat" style="--h:0.365"></span>57</td>
     <td class="num">40</td>
@@ -1195,7 +1199,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Trieste</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>11 sentenze: 8 condanne, 3 assoluzioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>11 sentenze: 8 condanne, 3 assoluzioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 11 sent., 8 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1203,7 +1207,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Trieste</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>18 sentenze: 13 condanne, 4 assoluzioni, 1 prescr. · 158 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>18 sentenze: 13 condanne, 4 assoluzioni, 1 prescr. · 158 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 18 sent., 13 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1242,7 +1246,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Perugia</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>42 sentenze: 9 condanne, 10 assoluzioni, 15 prescr., 4 patteg., 4 altro · 33 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>42 sentenze: 9 condanne, 10 assoluzioni, 15 prescr., 4 patteg., 4 altro · 33 archiviazioni<span class="art-split"><b>boschivo</b> 4 sent., 0 cond. · <b>comune</b> 31 sent., 8 cond. · <span class="nd">7 senza articolo</span></span></td>
     <td class="num">18</td>
     <td class="num c-ha"><span class="heat" style="--h:0.594"></span>739</td>
     <td class="num">261</td>
@@ -1250,7 +1254,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Spoleto</span><span class="uff-tipo">Tribunale · prov. Perugia</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>7 sentenze: 2 condanne, 1 assoluzioni, 1 prescr., 3 altro</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>7 sentenze: 2 condanne, 1 assoluzioni, 1 prescr., 3 altro<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">18</td>
     <td class="num c-ha"><span class="heat" style="--h:0.594"></span>739</td>
     <td class="num">261</td>
@@ -1289,7 +1293,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Isernia</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>9 sentenze: 1 condanne, 2 assoluzioni, 6 patteg. · 1 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>9 sentenze: 1 condanne, 2 assoluzioni, 6 patteg. · 1 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 9 sent., 1 cond.</span></td>
     <td class="num">20</td>
     <td class="num c-ha"><span class="heat" style="--h:0.567"></span>547</td>
     <td class="num">48</td>
@@ -1305,7 +1309,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Campobasso</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>8 sentenze: 4 condanne, 4 assoluzioni · 25 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>8 sentenze: 4 condanne, 4 assoluzioni · 25 archiviazioni<span class="art-split"><b>boschivo</b> 2 sent., 1 cond. · <b>comune</b> 6 sent., 3 cond.</span></td>
     <td class="num">8</td>
     <td class="num c-ha"><span class="heat" style="--h:0.478"></span>203</td>
     <td class="num">7</td>
@@ -1344,7 +1348,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Cuneo</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>10 sentenze: 1 condanne, 6 assoluzioni, 2 patteg., 1 promiscue</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>10 sentenze: 1 condanne, 6 assoluzioni, 2 patteg., 1 promiscue<span class="art-split"><b>boschivo</b> 1 sent., 0 cond. · <b>comune</b> 9 sent., 1 cond.</span></td>
     <td class="num">13</td>
     <td class="num c-ha"><span class="heat" style="--h:0.556"></span>485</td>
     <td class="num">447</td>
@@ -1352,7 +1356,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Torino</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>91 sentenze: 75 condanne, 15 assoluzioni, 1 prescr.</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>91 sentenze: 75 condanne, 15 assoluzioni, 1 prescr.<span class="art-split"><b>boschivo</b> 8 sent., 8 cond. · <b>comune</b> 83 sent., 67 cond.</span></td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.370"></span>60</td>
     <td class="num">18</td>
@@ -1360,7 +1364,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Ivrea</span><span class="uff-tipo">Tribunale · prov. Torino</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>3 sentenze: 2 condanne, 1 patteg.</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>3 sentenze: 2 condanne, 1 patteg.<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.370"></span>60</td>
     <td class="num">18</td>
@@ -1368,7 +1372,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Torino</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>50 sentenze: 25 condanne, 11 assoluzioni, 14 patteg. · 89 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>50 sentenze: 25 condanne, 11 assoluzioni, 14 patteg. · 89 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 50 sent., 25 cond.</span></td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.370"></span>60</td>
     <td class="num">18</td>
@@ -1400,7 +1404,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Novara</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>8 sentenze: 1 condanne, 2 assoluzioni, 2 prescr., 3 altro</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>8 sentenze: 1 condanne, 2 assoluzioni, 2 prescr., 3 altro<span class="art-split"><b>boschivo</b> 1 sent., 0 cond. · <b>comune</b> 7 sent., 1 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1408,7 +1412,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Verbania</span><span class="uff-tipo">Tribunale · prov. Verbano-Cusio-Ossola</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>38 sentenze: 21 condanne, 4 assoluzioni, 13 patteg. · 13 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>38 sentenze: 21 condanne, 4 assoluzioni, 13 patteg. · 13 archiviazioni<span class="art-split"><b>boschivo</b> 16 sent., 8 cond. · <b>comune</b> 22 sent., 13 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1416,7 +1420,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Vercelli</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>21 sentenze: 12 condanne, 3 assoluzioni, 6 patteg. · 13 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>21 sentenze: 12 condanne, 3 assoluzioni, 6 patteg. · 13 archiviazioni<span class="art-split"><b>boschivo</b> 2 sent., 1 cond. · <b>comune</b> 19 sent., 11 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1447,7 +1451,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Bologna</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>86 sentenze: 50 condanne, 12 assoluzioni, 23 prescr., 1 altro</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>86 sentenze: 50 condanne, 12 assoluzioni, 23 prescr., 1 altro<span class="art-split"><b>boschivo</b> 8 sent., 4 cond. · <b>comune</b> 64 sent., 37 cond. · <span class="nd">14 senza articolo</span></span></td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.506"></span>278</td>
     <td class="num">12</td>
@@ -1455,7 +1459,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Bologna</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>105 sentenze: 44 condanne, 24 assoluzioni, 8 prescr., 10 patteg., 19 altro · 113 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>105 sentenze: 44 condanne, 24 assoluzioni, 8 prescr., 10 patteg., 19 altro · 113 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">3</td>
     <td class="num c-ha"><span class="heat" style="--h:0.506"></span>278</td>
     <td class="num">12</td>
@@ -1463,7 +1467,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Parma</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>9 sentenze: 6 condanne, 2 assoluzioni, 1 patteg.</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>9 sentenze: 6 condanne, 2 assoluzioni, 1 patteg.<span class="art-split"><b>boschivo</b> 4 sent., 2 cond. · <b>comune</b> 5 sent., 4 cond.</span></td>
     <td class="num">2</td>
     <td class="num c-ha"><span class="heat" style="--h:0.444"></span>139</td>
     <td class="num">126</td>
@@ -1479,7 +1483,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Modena</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>20 sentenze: 6 condanne, 4 assoluzioni, 6 patteg., 4 altro · 24 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>20 sentenze: 6 condanne, 4 assoluzioni, 6 patteg., 4 altro · 24 archiviazioni<span class="art-split"><b>boschivo</b> 9 sent., 3 cond. · <b>comune</b> 11 sent., 3 cond.</span></td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.062"></span>1</td>
     <td class="num">1</td>
@@ -1495,7 +1499,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Reggio Emilia</span><span class="uff-tipo">Tribunale · prov. Reggio nell’Emilia</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>26 sentenze: 11 condanne, 14 assoluzioni, 1 prescr. · 1 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>26 sentenze: 11 condanne, 14 assoluzioni, 1 prescr. · 1 archiviazioni<span class="art-split"><b>boschivo</b> 4 sent., 4 cond. · <b>comune</b> 22 sent., 7 cond.</span></td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.237"></span>13</td>
     <td class="num"><span class="z">0</span></td>
@@ -1503,7 +1507,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Ferrara</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>27 sentenze: 7 assoluzioni, 1 patteg., 19 altro · 162 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>27 sentenze: 7 assoluzioni, 1 patteg., 19 altro · 162 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1511,7 +1515,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Ravenna</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>26 sentenze: 11 condanne, 9 assoluzioni, 3 patteg., 3 altro · 118 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>26 sentenze: 11 condanne, 9 assoluzioni, 3 patteg., 3 altro · 118 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 22 sent., 11 cond. · <span class="nd">4 senza articolo</span></span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1519,7 +1523,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Rimini</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>56 sentenze: 12 condanne, 25 assoluzioni, 8 prescr., 7 patteg., 4 altro · 32 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>56 sentenze: 12 condanne, 25 assoluzioni, 8 prescr., 7 patteg., 4 altro · 32 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1558,7 +1562,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Ancona</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>25 sentenze: 16 condanne, 4 assoluzioni, 4 prescr., 1 promiscue</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>25 sentenze: 16 condanne, 4 assoluzioni, 4 prescr., 1 promiscue<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.175"></span>6</td>
     <td class="num"><span class="z">0</span></td>
@@ -1566,7 +1570,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Ancona</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>15 sentenze: 3 condanne, 7 assoluzioni, 1 prescr., 1 promiscue, 3 altro</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>15 sentenze: 3 condanne, 7 assoluzioni, 1 prescr., 1 promiscue, 3 altro<span class="art-split"><b>boschivo</b> 3 sent., 0 cond. · <b>comune</b> 12 sent., 3 cond.</span></td>
     <td class="num">1</td>
     <td class="num c-ha"><span class="heat" style="--h:0.175"></span>6</td>
     <td class="num"><span class="z">0</span></td>
@@ -1582,7 +1586,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Fermo</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>15 sentenze: 9 condanne, 3 assoluzioni, 2 prescr., 1 patteg. · 3 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>15 sentenze: 9 condanne, 3 assoluzioni, 2 prescr., 1 patteg. · 3 archiviazioni<span class="art-split"><b>boschivo</b> 2 sent., 1 cond. · <b>comune</b> 12 sent., 8 cond. · <span class="nd">1 senza articolo</span></span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1590,7 +1594,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Pesaro</span><span class="uff-tipo">Tribunale · prov. Pesaro e Urbino</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>10 sentenze: 1 condanne, 3 assoluzioni, 4 patteg., 2 promiscue · 65 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>10 sentenze: 1 condanne, 3 assoluzioni, 4 patteg., 2 promiscue · 65 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 3 sent., 0 cond. · <span class="nd">7 senza articolo</span></span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1598,7 +1602,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Urbino</span><span class="uff-tipo">Tribunale · prov. Pesaro e Urbino</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>11 sentenze: 3 condanne, 5 assoluzioni, 3 patteg. · 32 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>11 sentenze: 3 condanne, 5 assoluzioni, 3 patteg. · 32 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1668,7 +1672,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Belluno</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>15 sentenze: 8 condanne, 5 assoluzioni, 2 altro · 218 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>15 sentenze: 8 condanne, 5 assoluzioni, 2 altro · 218 archiviazioni<span class="art-split"><b>boschivo</b> 1 sent., 1 cond. · <b>comune</b> 14 sent., 7 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1755,7 +1759,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Milano</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>85 sentenze: 82 condanne, 2 assoluzioni, 1 prescr.</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>85 sentenze: 82 condanne, 2 assoluzioni, 1 prescr.<span class="art-split"><b>boschivo</b> 6 sent., 5 cond. · <b>comune</b> 75 sent., 73 cond. · <span class="nd">4 senza articolo</span></span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1763,7 +1767,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Bergamo</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>68 sentenze: 23 condanne, 19 assoluzioni, 5 prescr., 12 patteg., 9 altro · 496 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>68 sentenze: 23 condanne, 19 assoluzioni, 5 prescr., 12 patteg., 9 altro · 496 archiviazioni<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1795,7 +1799,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Cremona</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>1 sentenze: 1 altro · 3 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-bassa" title="bassa — da verificare">○</span>1 sentenze: 1 altro · 3 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 1 sent., 0 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1803,7 +1807,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Lecco</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>13 sentenze: 4 condanne, 6 assoluzioni, 3 patteg. · 30 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>13 sentenze: 4 condanne, 6 assoluzioni, 3 patteg. · 30 archiviazioni<span class="art-split"><b>boschivo</b> 6 sent., 1 cond. · <b>comune</b> 7 sent., 3 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1811,7 +1815,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Lodi</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>26 sentenze: 14 condanne, 12 assoluzioni · 34 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>26 sentenze: 14 condanne, 12 assoluzioni · 34 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 26 sent., 14 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1827,7 +1831,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Milano</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>92 sentenze: 33 condanne, 26 assoluzioni, 2 prescr., 19 patteg., 12 promiscue · 856 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>92 sentenze: 33 condanne, 26 assoluzioni, 2 prescr., 19 patteg., 12 promiscue · 856 archiviazioni<span class="art-split"><b>boschivo</b> 2 sent., 1 cond. · <b>comune</b> 90 sent., 32 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1835,7 +1839,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Monza</span><span class="uff-tipo">Tribunale · prov. Monza e della Brianza</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>21 sentenze: 6 condanne, 3 assoluzioni, 12 patteg.</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>21 sentenze: 6 condanne, 3 assoluzioni, 12 patteg.<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 21 sent., 6 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1890,7 +1894,7 @@ footer b{color:var(--muted)}
       <tbody><tr data-tipo="CA" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Trento</span><span class="uff-tipo">Corte d'Appello</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>2 sentenze: 1 assoluzioni, 1 promiscue</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>2 sentenze: 1 assoluzioni, 1 promiscue<span class="art-split na">ripartizione per articolo non disponibile</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1898,7 +1902,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Bolzano</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>6 sentenze: 6 patteg. · 44 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>6 sentenze: 6 patteg. · 44 archiviazioni<span class="art-split"><b>boschivo</b> 1 sent., 0 cond. · <b>comune</b> 5 sent., 0 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1906,7 +1910,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Rovereto</span><span class="uff-tipo">Tribunale · prov. Trento</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>7 sentenze: 1 condanne, 2 assoluzioni, 4 patteg. · 16 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-media" title="media — da controllare">◐</span>7 sentenze: 1 condanne, 2 assoluzioni, 4 patteg. · 16 archiviazioni<span class="art-split"><b>boschivo</b> 0 sent. · <b>comune</b> 7 sent., 1 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1914,7 +1918,7 @@ footer b{color:var(--muted)}
   </tr><tr data-tipo="TR" data-risp="1" data-dati="1" data-merito="1">
     <td class="c-uff"><span class="uff-nome">Trento</span><span class="uff-tipo">Tribunale</span></td>
     <td><span class="pill ok">Dati forniti</span></td>
-    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>31 sentenze: 5 condanne, 7 assoluzioni, 14 patteg., 5 altro · 18 archiviazioni</td>
+    <td class="c-merito detail"><span class="aff aff-alta" title="alta affidabilità">●</span>31 sentenze: 5 condanne, 7 assoluzioni, 14 patteg., 5 altro · 18 archiviazioni<span class="art-split"><b>boschivo</b> 5 sent., 0 cond. · <b>comune</b> 26 sent., 5 cond.</span></td>
     <td class="num"><span class="z">0</span></td>
     <td class="num c-ha"><span class="heat" style="--h:0.000"></span><span class="z">0</span></td>
     <td class="num"><span class="z">0</span></td>
@@ -1930,6 +1934,7 @@ footer b{color:var(--muted)}
     Bosco per regione (confronto in intestazione): <a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/ispra_superfici_bosco_incendio_2018-2025_regionale.xlsx" target="_blank" rel="noopener">tabella ufficiale ISPRA</a>
     2018–2025, somma 2021–2025 (ISPRA elabora anch'essa EFFIS, solo ecosistemi forestali, dettaglio solo regionale).<br>
     <b>Avvertenze.</b> I dati sul merito sono un'estrazione automatica da verificare. La provincia della sede non coincide con la giurisdizione (soprattutto per le corti d'appello e i tribunali non capoluogo). Nel campo provincia di EFFIS alcuni comuni sardi risultano mal classificati: i totali della Sardegna sono prudenziali.
+    <br><b>Boschivo / comune:</b> sotto i dati di ogni ufficio le sentenze sono ripartite per articolo — <em>boschivo</em> = art. 423-bis c.p. (incendio boschivo, doloso o colposo); <em>comune</em> = artt. 423 e 449 c.p. (incendio doloso e colposo). Quando l'ufficio ha fornito solo totali, la ripartizione non è disponibile.
     <br><b>Nota sul filtro:</b> i numeri di incendi ed ettari descrivono il territorio (la provincia) e non cambiano scegliendo tribunali o corti d'appello; cambiano invece i conteggi degli uffici e delle risposte.
   </footer>
 </div>
