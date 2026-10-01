@@ -112,6 +112,8 @@ footer b{color:var(--muted)}
     <div class="kpi"><div class="n" id="k-uff">168</div><div class="l">uffici contattati</div><div class="s" id="k-uff-sub">140 tribunali · 28 corti</div></div>
     <div class="kpi"><div class="n" id="k-risp">138</div><div class="l">hanno risposto</div><div class="s" id="k-risp-sub">82% del totale</div></div>
     <div class="kpi"><div class="n" id="k-dati">94</div><div class="l">con dati nel merito</div><div class="s" id="k-dati-sub">56%</div></div>
+    <div class="kpi"><div class="n" id="k-cond">1.072</div><div class="l">condanne totali</div><div class="s" id="k-cond-sub">611 tribunale · 461 appello</div></div>
+    <div class="kpi"><div class="n" id="k-cb">134</div><div class="l">condanne incendi boschivi</div><div class="s" id="k-cb-sub">71 tribunale · 63 appello</div></div>
     <div class="kpi"><div class="n">7.536</div><div class="l">incendi in Italia</div><div class="s">476.558 ettari</div></div>
   </div>
 
@@ -2212,7 +2214,7 @@ footer b{color:var(--muted)}
     <a href="https://noecomafia.legambiente.it/incendi/" target="_blank" rel="noopener">Ecomafia</a> sul ciclo degli incendi, elaborati da Legambiente su dati dei Carabinieri Forestali e dei corpi forestali regionali e provinciali; coprono tutte le regioni (<a href="https://github.com/infonodesETS/incendi-giustizia/blob/main/fonti/legambiente_reati_incendio_province_2021-2025.csv" target="_blank" rel="noopener">tabella per provincia</a>).<br>
     <b>Avvertenze.</b> I dati sul merito sono un'estrazione automatica da verificare. La provincia della sede non coincide con la giurisdizione (soprattutto per le corti d'appello e i tribunali non capoluogo). Nel campo provincia di EFFIS alcuni comuni sardi risultano mal classificati: i totali della Sardegna sono prudenziali.
     <br><b>Boschivo / comune:</b> sotto i dati di ogni ufficio le sentenze sono ripartite per articolo — <em>boschivo</em> = art. 423-bis c.p. (incendio boschivo, doloso o colposo); <em>comune</em> = artt. 423 e 449 c.p. (incendio doloso e colposo). Quando l'ufficio ha fornito solo totali, la ripartizione non è disponibile.
-    <br><b>Condanne per regione:</b> nell'intestazione di ogni regione le condanne dei tribunali (primo grado) e delle corti d'appello sono indicate separatamente, perché una stessa vicenda può avere una sentenza in entrambi i gradi. Le condanne per incendio boschivo contano solo gli uffici che hanno indicato l'articolo: sono quindi un valore minimo.
+    <br><b>Condanne per regione:</b> nell'intestazione di ogni regione le condanne dei tribunali (primo grado) e delle corti d'appello sono indicate separatamente, perché una stessa vicenda può avere una sentenza in entrambi i gradi. Nelle schede in testata, invece, "condanne totali" somma le sentenze di condanna dei due gradi (la ripartizione è indicata sotto il numero): è un conteggio di sentenze, non di persone o vicende. Le condanne per incendio boschivo contano solo gli uffici che hanno indicato l'articolo: sono quindi un valore minimo.
     <br><b>Nota sul filtro:</b> i numeri di incendi ed ettari descrivono il territorio (la provincia) e non cambiano scegliendo tribunali o corti d'appello; cambiano invece i conteggi degli uffici e delle risposte.
   </footer>
 </div>
@@ -2251,6 +2253,20 @@ footer b{color:var(--muted)}
     txt('k-uff', tot); txt('k-risp', risp); txt('k-dati', dati); txt('k-dett', dett);
     txt('k-risp-sub', tot ? Math.round(risp / tot * 100) + '% del totale' : '—');
     txt('k-dati-sub', tot ? Math.round(dati / tot * 100) + '%' : '—');
+    var cT = 0, cA = 0, bT = 0, bA = 0;
+    rows.forEach(function(tr){
+      var n = +tr.getAttribute('data-cond') || 0, b = +tr.getAttribute('data-cb') || 0;
+      if (tr.getAttribute('data-tipo') === 'CA') { cA += n; bA += b; } else { cT += n; bT += b; }
+    });
+    var it = function(n){ return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, '.'); };
+    if (f === 'all') {
+      txt('k-cond', it(cT + cA)); txt('k-cond-sub', it(cT) + ' tribunale · ' + it(cA) + ' appello');
+      txt('k-cb', it(bT + bA)); txt('k-cb-sub', it(bT) + ' tribunale · ' + it(bA) + ' appello');
+    } else {
+      var c = f === 'CA' ? cA : cT, b = f === 'CA' ? bA : bT;
+      txt('k-cond', it(c)); txt('k-cond-sub', f === 'CA' ? 'solo appello' : 'solo tribunali');
+      txt('k-cb', it(b)); txt('k-cb-sub', c ? Math.round(b / c * 100) + '% delle condanne' : '—');
+    }
     txt('k-uff-sub', f === 'TR' ? 'solo tribunali' : f === 'CA' ? 'solo corti d\'appello' : '140 tribunali · 28 corti');
     btns.forEach(function(b){ b.classList.toggle('on', b.getAttribute('data-f') === f); });
   }
